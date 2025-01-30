@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<me>
+    <name>Oliver</name>
+    <age>26</age>
+    <hoppies>
+        <hoppy>Gaming</hoppy>
+        <hoppy>Golf</hoppy>
+        <hoppy>Badminton</hoppy>
+        <hoppy>Eating</hoppy>
+    </hoppies>
+</me>
