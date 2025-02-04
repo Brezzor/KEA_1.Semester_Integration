@@ -2,10 +2,10 @@
 <me>
     <name>Oliver</name>
     <age>26</age>
-    <hoppies>
-        <hoppy>Gaming</hoppy>
-        <hoppy>Golf</hoppy>
-        <hoppy>Badminton</hoppy>
-        <hoppy>Eating</hoppy>
-    </hoppies>
+    <hobbies>
+        <hobby>Gaming</hobby>
+        <hobby>Golf</hobby>
+        <hobby>Badminton</hobby>
+        <hobby>Eating</hobby>
+    </hobbies>
 </me>

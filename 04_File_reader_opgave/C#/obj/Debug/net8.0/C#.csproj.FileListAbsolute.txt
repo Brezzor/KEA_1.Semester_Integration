@@ -13,3 +13,6 @@ C:\Users\olive\source\repos\KEA_1_Semester\KEA_1_Semester\04_File_reader_opgave\
 C:\Users\olive\source\repos\KEA_1_Semester\KEA_1_Semester\04_File_reader_opgave\C#\obj\Debug\net8.0\C#.pdb
 C:\Users\olive\source\repos\KEA_1_Semester\KEA_1_Semester\04_File_reader_opgave\C#\obj\Debug\net8.0\C#.genruntimeconfig.cache
 C:\Users\olive\source\repos\KEA_1_Semester\KEA_1_Semester\04_File_reader_opgave\C#\obj\Debug\net8.0\ref\C#.dll
+c:\Users\olive\source\repos\KEA_1_Semester\KEA_1_Semester\04_File_reader_opgave\C#\bin\Debug\net8.0\YamlDotNet.dll
+c:\Users\olive\source\repos\KEA_1_Semester\KEA_1_Semester\04_File_reader_opgave\C#\obj\Debug\net8.0\C#.csproj.AssemblyReference.cache
+c:\Users\olive\source\repos\KEA_1_Semester\KEA_1_Semester\04_File_reader_opgave\C#\obj\Debug\net8.0\C#.csproj.Up2Date

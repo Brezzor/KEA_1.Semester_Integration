@@ -1,17 +1,26 @@
 using System.Text.Json.Serialization;
+using System.Xml.Serialization;
 
-class Me
+[XmlRoot(ElementName = "me")]
+public class Me
 {
-    public Me(string name, int age, List<string> hoppies)
-    {
-        Name = name;
-        Age = age;
-        Hoppies = hoppies;
-    }
+    [XmlElement(ElementName = "name")]
     [JsonPropertyName("name")]
-    public string Name { get; set; }
+    public string? Name { get; set; }
+
+    [XmlElement(ElementName = "age")]
     [JsonPropertyName("age")]
-    public int Age { get; set; }
+    public int? Age { get; set; }
+
+    [XmlArray(ElementName = "hobbies")]
+    [XmlArrayItem(ElementName = "hobby")]
     [JsonPropertyName("hobbies")]
-    public List<string> Hoppies { get; set; }
+    public List<string>? Hobbies { get; set; }
+
+    public void WriteToConsole()
+    {
+        Console.WriteLine($"Name: {Name}");
+        Console.WriteLine($"Age: {Age}");
+        Console.WriteLine($"Hobbies: {string.Join(", ", Hobbies!)}\n");
+    }
 }
