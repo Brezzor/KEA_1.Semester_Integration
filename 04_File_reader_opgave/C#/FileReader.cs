@@ -98,11 +98,11 @@ static class FileReader
 
         string[] lines = File.ReadAllLines(@"..\..\..\..\Text_files\me.txt");
 
-        Dictionary<string, string> keyValues = lines.ToDictionary(s => s.Split(":")[0].Trim(), s => s.Split(":")[1].Trim());
+        Dictionary<string, string> keyValues = lines.ToDictionary(s => s.Split(": ")[0].Trim(), s => s.Split(": ")[1].Trim());
 
         me.Name = keyValues["name"];
         me.Age = int.Parse(keyValues["age"]);
-        me.Hobbies = keyValues["hobbies"].Split(",").Select(s => s.Trim()).ToList();
+        me.Hobbies = keyValues["hobbies"].Split(", ").ToList();
 
         if (me != null)
         {
