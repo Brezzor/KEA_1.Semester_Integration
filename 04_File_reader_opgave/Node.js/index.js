@@ -1,3 +1,5 @@
-import { FileReader } from "./FileReader.js";
+import { FileReaderMethods } from "./fileReaderMethods.js";
 
-FileReader.ReadJsonFile();
+FileReaderMethods.readJsonFile();
+
+FileReaderMethods.readXmlFile();
