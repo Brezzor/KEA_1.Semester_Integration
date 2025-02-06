@@ -8,4 +8,4 @@ app.get("/", (req, res) => {
   res.send({ data: "Hello, World!" });
 });
 
-app.listen(PORT, () => console.log(`Http://localhost:${PORT}`));
+app.listen(PORT, () => console.log(`Link to server: Http://localhost:${PORT}`));
