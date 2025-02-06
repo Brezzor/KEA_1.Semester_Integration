@@ -14,5 +14,6 @@ export class FileReaderMethods {
     const data = await fs.readFileSync(
       "./04_File_reader_opgave/Text_files/me.xml"
     );
+    console.log(data);
   }
 }
