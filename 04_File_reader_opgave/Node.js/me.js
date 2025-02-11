@@ -7,6 +7,6 @@ export class Me {
   writeToConsole() {
     console.log(`Name: ${this.name}`);
     console.log(`Age: ${this.age}`);
-    console.log(`Hobbies: ${this.hobbies}`);
+    console.log(`Hobbies: ${this.hobbies.join(", ")}\n`);
   }
 }

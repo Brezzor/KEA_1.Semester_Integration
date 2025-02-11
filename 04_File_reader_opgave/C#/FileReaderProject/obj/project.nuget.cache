@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gM980vi89xM=",
+  "dgSpecHash": "TUqOGppXRyg=",
   "success": true,
-  "projectFilePath": "c:\\Users\\olive\\Desktop\\KEA\\KEA_1_Semester\\04_File_reader_opgave\\C#\\FileReaderProject\\FileReaderProject.csproj",
+  "projectFilePath": "C:\\Users\\olive\\source\\repos\\KEA_1_Semester\\KEA_1_Semester\\04_File_reader_opgave\\C#\\FileReaderProject\\FileReaderProject.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\olive\\.nuget\\packages\\yamldotnet\\16.3.0\\yamldotnet.16.3.0.nupkg.sha512"
   ],
