@@ -54,11 +54,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\olive\\Desktop\\KEA\\KEA_1.Semester_Integration\\04_File_reader_opgave\\C#\\FileReaderProject\\FileReaderProject.csproj",
+      "projectUniqueName": "C:\\Users\\olive\\source\\repos\\KEA_1.Semester_Integration\\01a._File_reader_opgave\\C#\\FileReaderProject\\FileReaderProject.csproj",
       "projectName": "FileReaderProject",
-      "projectPath": "C:\\Users\\olive\\Desktop\\KEA\\KEA_1.Semester_Integration\\04_File_reader_opgave\\C#\\FileReaderProject\\FileReaderProject.csproj",
+      "projectPath": "C:\\Users\\olive\\source\\repos\\KEA_1.Semester_Integration\\01a._File_reader_opgave\\C#\\FileReaderProject\\FileReaderProject.csproj",
       "packagesPath": "C:\\Users\\olive\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\olive\\Desktop\\KEA\\KEA_1.Semester_Integration\\04_File_reader_opgave\\C#\\FileReaderProject\\obj\\",
+      "outputPath": "C:\\Users\\olive\\source\\repos\\KEA_1.Semester_Integration\\01a._File_reader_opgave\\C#\\FileReaderProject\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -73,6 +73,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -118,7 +119,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.103/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

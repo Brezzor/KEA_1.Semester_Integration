@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "2rt/wTbUF0Y=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\olive\\source\\repos\\KEA_1.Semester_Integration\\01a._File_reader_opgave\\C#\\FileReaderProject\\FileReaderProject.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\olive\\.nuget\\packages\\yamldotnet\\16.3.0\\yamldotnet.16.3.0.nupkg.sha512"
+  ],
+  "logs": []
+}
