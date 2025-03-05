@@ -1,0 +1,6 @@
+@_03a._Data_parsing_server_project_HostAddress = http://localhost:5083
+
+GET {{_03a._Data_parsing_server_project_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
