@@ -62,7 +62,10 @@ Atlas atlas-ne2a2s-shard-0 [primary] sample_mflix>
 
 - Read/Find:
     - "users" collection
-- Read/Find and Write/insert:
+    - "comments" collection
+- Write/insert:
+    - "comments" collection
+- Update
     - "comments" collection
 - No access
     - "embedded_movies"
