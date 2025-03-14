@@ -8,7 +8,7 @@ First you have to make sure you have the MongoDb CLI, and it has to be ***versio
 
 ### Check if installed or version
 
-To check if you have the MongoDb CLI installed, or check the version. You can run this command:
+To check if you have the MongoDb CLI installed, or check the version. You can run this command in PowerShell:
 
 ````powershell
 mongosh --version
