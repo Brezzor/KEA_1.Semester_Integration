@@ -4,7 +4,7 @@ This is a guide for connecting as a public user, to the Cluster0, ***"sample_mfl
 
 ## Mongosh/Mongo CLI
 
-First you have to make sure you have the MongoDb CLI, and it has to be ***version 2.0.0*** or ***greater***.
+First you have to make sure you have the MongoDb Shell Tool, and it has to be ***version 2.0.0*** or ***greater***.
 
 ### Check if installed or version
 
@@ -56,6 +56,13 @@ When doing this. It changes the selected database, to use ***"sample_mflix"***. 
 
 ````
 Atlas atlas-ne2a2s-shard-0 [primary] sample_mflix>
+````
+## MongoDb Shell Commands
+
+To Get/Find data in the database. You can run this command:
+
+````powershell
+db.users.find()
 ````
 
 ## Public-user permissions
