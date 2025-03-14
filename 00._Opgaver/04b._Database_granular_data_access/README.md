@@ -20,7 +20,7 @@ mongo --version
 
 The latest version can be found here.
 
-&rarr; https://www.mongodb.com/docs/mongocli/current/ &larr;
+&rarr; [https://www.mongodb.com/docs/mongocli/current/](https://downloads.mongodb.com/compass/mongosh-2.4.2-x64.msi) &larr;
 
 ## How to connect using the CLI
 
