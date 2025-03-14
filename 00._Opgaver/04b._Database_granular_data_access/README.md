@@ -65,7 +65,13 @@ To Get/Find data in one of the collections. You can run this command:
 db.users.find()
 ````
 
-This Gets/Finds the all the data from the ***users*** collection. Try to change ***users*** to one of the other collections
+This Gets/Finds all the data from the ***users*** collection. Try to change ***users*** to one of the other collections names. Like the ***comments***.
+
+To Create/Insert data into one of the collections. You can run this command:
+
+````powershell
+db.comments.insert({name:})
+````
 
 ## Public-user permissions
 
