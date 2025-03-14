@@ -59,21 +59,25 @@ Atlas atlas-ne2a2s-shard-0 [primary] sample_mflix>
 ````
 ## MongoDb Shell Commands
 
-To Get/Find data in the database. You can run this command:
+To Get/Find data in one of the collections. You can run this command:
 
 ````powershell
 db.users.find()
 ````
 
+This Gets/Finds the all the data from the ***users*** collection. Try to change ***users*** to one of the other collections
+
 ## Public-user permissions
 
+List of names of the collections and the permissions:
+
 - Read/Find:
-    - "users" collection
-    - "comments" collection
+    - "users"
+    - "comments"
 - Write/insert:
-    - "comments" collection
+    - "comments"
 - Update
-    - "comments" collection
+    - "comments"
 - No access
     - "embedded_movies"
     - "movies"
