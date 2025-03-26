@@ -78,7 +78,7 @@ This Creates/Inserts data into the ***comments*** collection. Try to change ***c
 To Alter/Update data in one of the collections. You can run this command:
 
 ````powershell
-db.comments.updateOne({ _id: ObjectId("67e3cfcd4b0f8ef8d4c81c1a") },{ $set: { name: "John Doe", email: "john.doe@gmail.com", movie_id: "573a1391f29313caabcd8543", text: "Lorem Ipsum", date: new Date()}})
+db.comments.updateOne({ _id: ObjectId("67e3cfcd4b0f8ef8d4c81c1a") },{ $set: { name: "John Doe", email: "john.doe@gmail.com", date: new Date()}})
 ````
 
 This Alters/Updates the data in the ***comments*** collection. Try to change ***comments*** to one of the other collections names. Like the ***users***.
