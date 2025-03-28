@@ -108,3 +108,7 @@ List of permissions. With the names of the collections, that:
     - movies
     - sessions
     - theaters
+
+# Result of the integration
+
+&rarr; [Go to the result of integration](./RESULT.md) &larr;
