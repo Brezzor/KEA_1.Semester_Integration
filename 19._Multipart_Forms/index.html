@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h2>Basic Form Express</h2>
+    <form action="http://localhost:8001/form" method="post">
+        <label for="username">Username:</label><br>
+        <input type="text" name="username" placeholder="username..."><br><br>
+        <label for="password">Password:</label><br>
+        <input type="password" name="password" placeholder="password..."><br><br>
+        <input type="submit" value="Send From Data">
+    </form>
+
+    <h2>Basic Form FastAPI</h2>
+    <form action="http://localhost:8000/form" method="post">
+        <label for="username">Username:</label><br>
+        <input type="text" name="username" placeholder="username..."><br><br>
+        <label for="password">Password:</label><br>
+        <input type="password" name="password" placeholder="password..."><br><br>
+        <input type="submit" value="Send From Data">
+    </form>
+
+    <h2>File Form Express</h2>
+    <form action="http://localhost:8001/fileform" method="post" enctype="multipart/form-data">
+        <label for="file">File:</label><br>
+        <input type="file" name="file" placeholder="file..." accept="image/*" multiple><br><br>
+        <label>Description:</label><br>
+        <input type="text" name="description" placeholder="description..."><br><br>
+        <input type="submit" value="Send File">
+    </form>
+
+    <h2>File Form FastAPI</h2>
+    <form action="http://localhost:8000/fileform" method="post" enctype="multipart/form-data">
+        <label for="file">File:</label><br>
+        <input type="file" name="file" placeholder="file..." accept="image/*" multiple><br><br>
+        <label>Description:</label><br>
+        <input type="text" name="description" placeholder="description..."><br><br>
+        <input type="submit" value="Send File">
+    </form>
+
+    <script>
+        const fileInput = document.querySelector('input[type="file"]');
+        
+        fileInput.addEventListener('change', (event) => {
+            const files = event.target.files;
+            const validTypes = ['image/jpeg', 'image/png', 'image/svg+xml'];
+
+            for (let index = 0; index < validTypes.length; index++) {
+                if (!validTypes.includes(files[index].type)) {
+                    alert('Not a valid file type!');
+                    fileInput[index].value = '';
+                    return;
+                }
+            }
+
+            const maxSize = 2 * 1024 * 1024; // 2MB
+            for (let index = 0; index < validTypes.length; index++) {
+                if (files[index].size > maxSize) {
+                    alert('File size exceeds 2MB!');
+                    fileInput[index].value = '';
+                    return;
+                }
+            }
+        });
+    </script>
+</body>
+</html>
