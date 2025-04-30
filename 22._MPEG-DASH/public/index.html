@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.12.6/shaka-player.compiled.js" integrity="sha512-tFq8ZxX0hhNnwiPQFvCZVNEXj4jwMo1Lp9r5rLr3aeZk/+rKPmOGiBr2n7tCnHbrY3/RuYu1KUTZwpKWOwmDOw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>MPEG-DASH</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <h1>MPEG-DASH</h1>
+    
+    <video id="video-player" style="width: 100vw;height: 90vh;background-color: black;" controls></video>
+
+    <script>
+        const video = document.getElementById('video-player');
+        const player = new shaka.Player(video);
+        document.addEventListener('DOMContentLoaded', async () => {
+            try {
+                await player.load('./playlist.mpd');
+                console.log('The shaka player has loaded!');
+            } catch (e) {
+                console.log(e.message);
+            }
+        });
+
+        player.addEventListener('adaptation', () => {
+            const variant = player.getVariantTracks().find(track => track.active);
+            console.log(`[SHAKA] Adaptated to ${variant.height}p ${variant.bandwidth / 1000 / 1000}Mbps`);
+        });
+    </script>
+</body>
+</html>
