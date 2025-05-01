@@ -1,0 +1,1852 @@
+<!DOCTYPE html>
+ <html lang="da" class="position-relative">
+ <head prefix="og: http://ogp.me/ns#">
+     <meta charset="utf-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <link rel="dns-prefetch" href="//ww2.proshop.dk" />
+         <script>var proshopGtmServerDataLayer = [{}];</script>
+     <script type="module">
+    window.dataLayer = window.dataLayer || [];
+    function getElements() {
+        return document.querySelectorAll('[data-gtm]');
+    }
+    getElements().forEach(el => {
+        window.dataLayer.push(JSON.parse(atob(el.dataset.gtm)));
+    });
+    let btns = document.querySelectorAll('button[data-gtm-item-id]');
+    btns.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+            let gtmId = this.getAttribute('data-gtm-item-id');
+            getElements().forEach(el => {
+                var gtmJson = JSON.parse(atob(el.dataset.gtm));
+                for (var i = 0; i <= gtmJson.ecommerce.items.length; i++) {
+                    if (gtmJson.ecommerce.items[i].item_id !== gtmId) {
+                        continue;
+                    }
+                    window.dataLayer.push({ event: 'add_to_cart', ecommerce: { items: gtmJson.ecommerce.items[i] } });
+                    return;
+                }
+            });
+        },false);
+    });
+    let basketBuyBtn = document.querySelector('#CommerceBasketApp a.site-btn-green');
+    if (basketBuyBtn) {
+        basketBuyBtn.addEventListener('click', function (e) {
+            let basketLines = document.querySelectorAll('#basketLines li input');
+            basketLines.forEach((element) => {
+                let gtmJson = JSON.parse(this.getAttribute("data-gtm-click"));
+                let theId = element.getAttribute("id");
+                for (let index = 0; gtmJson.ecommerce.items.length; index++) {
+                    if (gtmJson.ecommerce.items[index].item_id !== theId) {
+                        continue;
+                    }
+                    gtmJson.ecommerce.items[index].quantity = element.value;
+                    window.dataLayer.push({ ecommerce: null })
+                    window.dataLayer.push(gtmJson);
+                    break;
+                }
+            });
+        });
+    }
+    let paymentTypeButtons = document.getElementsByName("paymentOption");    
+    paymentTypeButtons.forEach(function (paymentTypeButton) {
+        paymentTypeButton.addEventListener('click', function () {
+            window.dataLayer.push({ ecommerce: null })
+            window.dataLayer.push(JSON.parse(atob(paymentTypeButton.getAttribute('data-gtm-payment'))));
+        });
+    });
+</script>
+     <script type="text/javascript">
+    var apps = {};
+    apps.queue = [];
+    apps.register = function (rootContainer, app) {
+        if (typeof registerApp != 'undefined')
+            registerApp(rootContainer, app)
+        else {
+            apps.queue.push({ rootContainer, app });
+        }
+    }
+</script>
+     
+    
+
+     <title>Mini PC | Mini computer &#187; Stort udvalg og skarpe priser | Proshop</title>
+              <link rel="canonical" href="https://www.proshop.dk/Stationaer-Mini-PC-Barebone" />
+         <meta property="og:url" content="https://www.proshop.dk/Stationaer-Mini-PC-Barebone" />
+              <meta name="description" content="K&#248;b din mini PC h&#233;r. Se det store udvalg af mini computere fra m&#230;rker som fx Apple, Asus og Intel. Levering 1-2 dage!" />
+         <meta property="og:description" content="K&#248;b din mini PC h&#233;r. Se det store udvalg af mini computere fra m&#230;rker som fx Apple, Asus og Intel. Levering 1-2 dage!" />
+     <meta property="og:title" content="Mini PC | Mini computer &#187; Stort udvalg og skarpe priser | Proshop" />
+     <meta property="og:type" content="website" />
+     <meta property="og:image" content="mstile-310x310.png" />
+     <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/apple-touch-icon-57x57.png" />
+     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/apple-touch-icon-114x114.png" />
+     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/apple-touch-icon-72x72.png" />
+     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144x144.png" />
+     <link rel="apple-touch-icon-precomposed" sizes="60x60" href="/apple-touch-icon-60x60.png" />
+     <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/apple-touch-icon-120x120.png" />
+     <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/apple-touch-icon-76x76.png" />
+     <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/apple-touch-icon-152x152.png" />
+     <link rel="icon" type="image/png" href="/favicon-196x196.png" sizes="196x196" />
+     <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+     <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+     <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
+     <link rel="icon" type="image/png" href="/favicon-128.png" sizes="128x128" />
+     <meta name="application-name" content="PROSHOP" />
+     <meta name="msapplication-TileColor" content="#FFFFFF" />
+     <meta name="msapplication-TileImage" content="/mstile-144x144.png" />
+     <meta name="msapplication-square70x70logo" content="/mstile-70x70.png" />
+     <meta name="msapplication-square150x150logo" content="/mstile-150x150.png" />
+     <meta name="msapplication-wide310x150logo" content="/mstile-310x150.png" />
+     <meta name="msapplication-square310x310logo" content="/mstile-310x310.png" />
+     <meta name="format-detection" content="telephone=no">
+     
+    
+    
+<link rel="stylesheet" href="/dist/Proshop/site.b9848762.css">
+    
+
+
+     
+    
+    <link rel="preload" href="/dist/js/shared.9ce23c75.js" as="script">
+<script src="/dist/js/shared.9ce23c75.js" defer></script>
+
+    <script type="text/javascript" src="/Content/v-373922279/scriptsBase.bundle.js" defer></script>
+    <script src="/dist/js/menu.8996b4b0.js" defer></script>
+
+<script src="/dist/js/common.f39cffe7.js" defer></script>
+
+<script src="/dist/js/showmo.2.4db2c254.js" defer></script>
+
+
+    
+    <script src="/dist/js/productList.098662fb.js" defer></script>
+
+<script src="/dist/js/showmo.2.4db2c254.js" defer></script>
+
+
+
+
+
+ </head>
+ 
+
+
+<body id="siteContainer" data-version="1.0.9251.16507" data-cnet="1df6b731e6" data-lang="da-DK" data-site="proshop.dk">
+    <noscript><iframe src="//ww2.proshop.dk/ns.html?id=GTM-PCQSS3W" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script type="module">
+(function (w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = '//ww2.proshop.dk/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-PCQSS3W');
+</script>
+
+    
+
+<header id="pageHeader" class="fixed-top w-100">
+    <div class="pl-2 pr-2 ps-container">
+        <div class="ps-container__inner header__template">
+            <div class="header__logo align-items-center">
+                <a href="/" aria-label="Back to Home" id="logohome"><div data-vueapp="campaigns" class="site-logo" id="c9781b337da2f41c690c6b8d11590431b" element-id="9781b337-da2f-41c6-90c6-b8d11590431b" data="e30=">
+</div>
+</a>
+            </div>
+<div class="header__search d-flex flex-nowrap">
+    <div class="header__burger hidden-md hidden-lg mr-2">
+        <button type="button" aria-label="Open menu" id="menu-button" class="pi-sm header__burger-menu navbar-toggle position-relative" aria-expanded="false" aria-haspopup="true" aria-controls="main-menu"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+        <p class="header__text m-0 position-relative">Menu</p>
+    </div>
+    <div class="position-relative flex-1">
+        <form action="/" class="d-flex align-items-center" method="GET" role="search">
+           <input type="search" data-action="/ClientPlugins/AutoComplete/SearchResult" id="search-input" class="input__round-lg w-100 site-search" name="s" placeholder="S&#248;g" title="S&#248;g" aria-description="S&#248;g efter produkter" enterkeyhint="search">
+           <button id="btn_clearSearchTerm" class="hidden" type="reset">Ryd</button>
+           <button type="submit" aria-label="S&#248;g efter produkter" class="input__round-btn green d-flex justify-content-center align-items-center"><i class="ki pi-xs pi-search"></i></button>
+        </form>
+    </div>
+</div><div class="header__categories d-flex">
+<a href="/Kundeservice.htm" class="header__icon d-block"><i class="pi-sm pi pi-headphones-b m-auto d-block"></i><p class="header__text m-0">Hjælp</p></a>                <div class="header__icon input__new"><a id="logout" class="hidden btn__no-style dropdown-toggle w-100 position-relative" href="/CustomerCenter/CustomerAccount">
+    <i class="pi-sm pi pi-login m-auto d-block position-relative"><small class='header__number-login position-absolute'><span class="pi-xxs pi pi-check-white"></span></small></i>
+    <p id="loginButtonText" class="hidden-xs hidden-sm header__text m-0">Log ind</p>
+    <p id="loginButtonTextSm" class="hidden-md hidden-lg header__text m-0">Min konto</p>
+</a>
+<button id="openLogin" type="button" class="btn__no-style w-100 position-relative" data-toggle="modal" data-target="#loginModal">
+    <i class="pi-sm pi pi-login m-auto d-block position-relative"></i>
+    <p id="loginButtonText" class="hidden-xs hidden-sm  hidden-sm header__text m-0">Log ind</p>
+    <p id="loginButtonTextSm" class="hidden-md hidden-lg header__text m-0">Log ind</p>
+</button></div><div class="header__icon">
+<div id="minibasket" data-customerid>
+<form action="/Basket" class="form-horizontal" method="get">        <button type="submit" class="btn__no-style position-relative w-100" id="btnBasket"><i class="pi-sm pi pi-basket m-auto position-relative d-block"><small data-minibasketlinecount></small></i><p class="hidden-xs hidden-sm header__text m-0" data-minibasketprice data-toggle="tooltip" data-placement="bottom"></p><p class="hidden-md hidden-lg header__text m-0">Kurv</p></button>
+</form></div></div>
+            </div>
+        </div>
+    </div>
+    
+
+
+<section class="menu-top hidden-xs hidden-sm position-absolute w-100">
+    <div class="pl-2 pr-2 ps-container">
+        <div class="d-flex flex-nowrap">
+                <a class="menu-top__cta menu-top__cta--bf" href="/Baerbar">B&#230;rbar</a>
+                <a class="menu-top__cta menu-top__cta--bf" href="/Gaming">Gaming</a>
+                <a class="menu-top__cta menu-top__cta--bf" href="/Mobil">Mobil</a>
+                <a class="menu-top__cta menu-top__cta--bf" href="/Smart-Home">Smart Home</a>
+                <a class="menu-top__cta menu-top__cta--bf" href="/SSD">SSD</a>
+                            <div class="menu-top__cta menu-top__cta--bf"><a data-action="campaignClick" data-id="096e58a2-c1cf-4ac1-a2a3-1f17e258a656" data-name="TOP MENU" data-creative="8134364b-196b-4c0a-8c9f-36a740e19cf8" data-position="top-menu" href="/Hus-Have">Hus & Have</a> <a data-action="campaignClick" data-id="096e58a2-c1cf-4ac1-a2a3-1f17e258a656" data-name="TOP MENU" data-creative="8134364b-196b-4c0a-8c9f-36a740e19cf8" data-position="top-menu" href="/DEALS">DEALS</a> <a data-action="campaignClick" data-id="096e58a2-c1cf-4ac1-a2a3-1f17e258a656" data-name="TOP MENU" data-creative="8134364b-196b-4c0a-8c9f-36a740e19cf8" data-position="top-menu" href="/dutzo-computere">DUTZO Gaming</a> <a data-action="campaignClick" data-id="096e58a2-c1cf-4ac1-a2a3-1f17e258a656" data-name="TOP MENU" data-creative="8134364b-196b-4c0a-8c9f-36a740e19cf8" data-position="top-menu" href="/Erhverv">Erhverv</a> <a data-action="campaignClick" data-id="096e58a2-c1cf-4ac1-a2a3-1f17e258a656" data-name="TOP MENU" data-creative="8134364b-196b-4c0a-8c9f-36a740e19cf8" data-position="top-menu" href="/Gavekort/Gavekort/100001">Gavekort</a></div>
+        </div>
+    </div>
+</section>
+
+
+</header><div id="search-result" class="position-relative"></div>
+        <div class="site-background-banner visible-lg"><div data-vueapp="campaigns" class="site-background-skin" id="c3d326938d6514efcaffa9c5f93badec6" element-id="3d326938-d651-4efc-affa-9c5f93badec6" data="e30=">
+</div>
+</div>
+    
+    
+
+    <div class="site-container-fullwidth">
+        <div class="top-banner-container visible-sm">
+            <div class="site-top-banner d-flex justify-content-center align-items-center"><div data-vueapp="campaigns" class="site-top" id="cd064ee6ec8004458af443f5c506c1182" element-id="d064ee6e-c800-4458-af44-3f5c506c1182" data="e30=">
+</div>
+</div>
+        </div>
+            <div class="visible-xs site-top-banner-mobile"><div data-vueapp="campaigns" class="site-top-small" id="ccbc0eb6805a3483bb5f55ec760f6be59" element-id="cbc0eb68-05a3-483b-b5f5-5ec760f6be59" data="e30=">
+</div>
+</div>
+    <div class="container site-container ps-container position-relative px-2 pt-1 hasTopBanner">
+        
+
+        
+        
+<div class="site-content-table row">
+    <div class="col-xs-12 col-md-3 p-0">
+        <aside id="Site-menu" class="position-relative" >
+   <nav class="ps-nav position-relative" :class="[{'ismobile' : isMobile}, { active: currentCategory !== '' }]" aria-label="Main menu" :menulevel="menulevel" @mouseout="throttleLeaveMenu">
+        <div class="h-100" :class="{ active: currentCategory !== '' }">
+            <div v-if="isMobile" class="ps-nav__title">
+                <div class="ps-nav__logo">
+                    <a href="/" aria-label="Back to Home">    <div class="site-campaignElement" data-campaign-element-id="9781b337-da2f-41c6-90c6-b8d11590431b">
+        <img src="/Images/proshop_logo_tagline_new_outlined_med_opacity_3684c4325e81.svg" />
+    </div>
+</a>
+                </div>
+                <button type="button" class="ps-nav__header-btn" @click="hideMobileMenu" aria-label="Close"><i aria-hidden="true" class="pi pi-close"></i></button>
+            </div>
+            <ul class="ps-nav__main" id="main-menu" role="menu" aria-labelledby="menu-button">
+                            <li class="ps-nav__cat outlet" role="presentation" @mouseout="hideMenuLevel; isHovered = false" :class="[{'hovered' : isHovered},{active: currentCategory == 'Sortiment_Outlet'}]"
+                                @touchmove.passive="touchDrag = true;" 
+                                @touchStart.passive="touchDrag = false;"
+                                @touchend="getMenuItems('Sortiment_Outlet', 'Auktion &amp; Outlet', columns, true);"                                    
+                                @mouseover="isMobile ? false : throttleMenu('Sortiment_Outlet', 'Auktion &amp; Outlet', columns);"                                    
+                                >
+                                <i data-bg="/Content/images/SVG/outlet.svg" width="25" height="25" class="ps-nav__icon lazy"></i>
+                                <a href="/Auktion-Outlet" role="menuitem" tabindex="0">Auktion &amp; Outlet</a>
+                                <i :class="{ 'pi-sm pi-arrow-down-fill svg-fill-red': currentCategory == 'Sortiment_Outlet', 'ki-s pi-chev-right bg-gray': currentCategory !== 'Sortiment_Outlet' }"></i>
+                            </li>
+                            <li class="ps-nav__cat campaign" role="presentation" @mouseout="hideMenuLevel; isHovered = false" :class="[{'hovered' : isHovered},{active: currentCategory == 'campaigns'}]"
+                                @touchmove.passive="touchDrag = true;" 
+                                @touchStart.passive="touchDrag = false;"
+                                @touchend="getMenuItems('campaigns', 'Kampagner', columns, true);"                                    
+                                @mouseover="isMobile ? false : throttleMenu('campaigns', 'Kampagner', columns);"                                    
+                                >
+                                <i data-bg="/Content/images/SVG/campaigns.svg" width="25" height="25" class="ps-nav__icon lazy"></i>
+                                <a href="/campaigns" role="menuitem" tabindex="0">Kampagner</a>
+                                <i :class="{ 'pi-sm pi-arrow-down-fill svg-fill-red': currentCategory == 'campaigns', 'ki-s pi-chev-right bg-gray': currentCategory !== 'campaigns' }"></i>
+                            </li>
+                            <li class="ps-nav__cat " role="presentation" @mouseout="hideMenuLevel; isHovered = false" :class="[{'hovered' : isHovered},{active: currentCategory == 'boger'}]"
+                                @touchmove.passive="touchDrag = true;" 
+                                @touchStart.passive="touchDrag = false;"
+                                @touchend="getMenuItems('boger', 'B&#248;ger', columns, true);"                                    
+                                @mouseover="isMobile ? false : throttleMenu('boger', 'B&#248;ger', columns);"                                    
+                                >
+                                <i data-bg="/Content/images/SVG/boger.svg" width="25" height="25" class="ps-nav__icon lazy"></i>
+                                <a href="/Boeger" role="menuitem" tabindex="0">B&#248;ger</a>
+                                <i :class="{ 'pi-sm pi-arrow-down-fill svg-fill-red': currentCategory == 'boger', 'ki-s pi-chev-right bg-gray': currentCategory !== 'boger' }"></i>
+                            </li>
+                            <li class="ps-nav__cat " role="presentation" @mouseout="hideMenuLevel; isHovered = false" :class="[{'hovered' : isHovered},{active: currentCategory == 'Sortiment_SpilFilm'}]"
+                                @touchmove.passive="touchDrag = true;" 
+                                @touchStart.passive="touchDrag = false;"
+                                @touchend="getMenuItems('Sortiment_SpilFilm', 'B&#248;rn &amp; Leget&#248;j', columns, true);"                                    
+                                @mouseover="isMobile ? false : throttleMenu('Sortiment_SpilFilm', 'B&#248;rn &amp; Leget&#248;j', columns);"                                    
+                                >
+                                <i data-bg="/Content/images/SVG/spilfilm.svg" width="25" height="25" class="ps-nav__icon lazy"></i>
+                                <a href="/Boern-Legetoej" role="menuitem" tabindex="0">B&#248;rn &amp; Leget&#248;j</a>
+                                <i :class="{ 'pi-sm pi-arrow-down-fill svg-fill-red': currentCategory == 'Sortiment_SpilFilm', 'ki-s pi-chev-right bg-gray': currentCategory !== 'Sortiment_SpilFilm' }"></i>
+                            </li>
+                            <li class="ps-nav__cat " role="presentation" @mouseout="hideMenuLevel; isHovered = false" :class="[{'hovered' : isHovered},{active: currentCategory == 'Sortiment_Computer'}]"
+                                @touchmove.passive="touchDrag = true;" 
+                                @touchStart.passive="touchDrag = false;"
+                                @touchend="getMenuItems('Sortiment_Computer', 'Computer', columns, true);"                                    
+                                @mouseover="isMobile ? false : throttleMenu('Sortiment_Computer', 'Computer', columns);"                                    
+                                >
+                                <i data-bg="/Content/images/SVG/computer.svg" width="25" height="25" class="ps-nav__icon lazy"></i>
+                                <a href="/Computer" role="menuitem" tabindex="0">Computer</a>
+                                <i :class="{ 'pi-sm pi-arrow-down-fill svg-fill-red': currentCategory == 'Sortiment_Computer', 'ki-s pi-chev-right bg-gray': currentCategory !== 'Sortiment_Computer' }"></i>
+                            </li>
+                            <li class="ps-nav__cat " role="presentation" @mouseout="hideMenuLevel; isHovered = false" :class="[{'hovered' : isHovered},{active: currentCategory == 'pets'}]"
+                                @touchmove.passive="touchDrag = true;" 
+                                @touchStart.passive="touchDrag = false;"
+                                @touchend="getMenuItems('pets', 'Dyreartikler', columns, true);"                                    
+                                @mouseover="isMobile ? false : throttleMenu('pets', 'Dyreartikler', columns);"                                    
+                                >
+                                <i data-bg="/Content/images/SVG/pets.svg" width="25" height="25" class="ps-nav__icon lazy"></i>
+                                <a href="/Dyreartikler" role="menuitem" tabindex="0">Dyreartikler</a>
+                                <i :class="{ 'pi-sm pi-arrow-down-fill svg-fill-red': currentCategory == 'pets', 'ki-s pi-chev-right bg-gray': currentCategory !== 'pets' }"></i>
+                            </li>
+                            <li class="ps-nav__cat " role="presentation" @mouseout="hideMenuLevel; isHovered = false" :class="[{'hovered' : isHovered},{active: currentCategory == 'Sortiment_Belysning'}]"
+                                @touchmove.passive="touchDrag = true;" 
+                                @touchStart.passive="touchDrag = false;"
+                                @touchend="getMenuItems('Sortiment_Belysning', 'El &amp; VVS', columns, true);"                                    
+                                @mouseover="isMobile ? false : throttleMenu('Sortiment_Belysning', 'El &amp; VVS', columns);"                                    
+                                >
+                                <i data-bg="/Content/images/SVG/belysning.svg" width="25" height="25" class="ps-nav__icon lazy"></i>
+                                <a href="/El-VVS" role="menuitem" tabindex="0">El &amp; VVS</a>
+                                <i :class="{ 'pi-sm pi-arrow-down-fill svg-fill-red': currentCategory == 'Sortiment_Belysning', 'ki-s pi-chev-right bg-gray': currentCategory !== 'Sortiment_Belysning' }"></i>
+                            </li>
+                            <li class="ps-nav__cat " role="presentation" @mouseout="hideMenuLevel; isHovered = false" :class="[{'hovered' : isHovered},{active: currentCategory == 'Sortiment_FotoVideo'}]"
+                                @touchmove.passive="touchDrag = true;" 
+                                @touchStart.passive="touchDrag = false;"
+                                @touchend="getMenuItems('Sortiment_FotoVideo', 'Foto &amp; Video', columns, true);"                                    
+                                @mouseover="isMobile ? false : throttleMenu('Sortiment_FotoVideo', 'Foto &amp; Video', columns);"                                    
+                                >
+                                <i data-bg="/Content/images/SVG/fotovideo.svg" width="25" height="25" class="ps-nav__icon lazy"></i>
+                                <a href="/Foto-Video" role="menuitem" tabindex="0">Foto &amp; Video</a>
+                                <i :class="{ 'pi-sm pi-arrow-down-fill svg-fill-red': currentCategory == 'Sortiment_FotoVideo', 'ki-s pi-chev-right bg-gray': currentCategory !== 'Sortiment_FotoVideo' }"></i>
+                            </li>
+                            <li class="ps-nav__cat " role="presentation" @mouseout="hideMenuLevel; isHovered = false" :class="[{'hovered' : isHovered},{active: currentCategory == 'Sortiment_Hardware'}]"
+                                @touchmove.passive="touchDrag = true;" 
+                                @touchStart.passive="touchDrag = false;"
+                                @touchend="getMenuItems('Sortiment_Hardware', 'Hardware', columns, true);"                                    
+                                @mouseover="isMobile ? false : throttleMenu('Sortiment_Hardware', 'Hardware', columns);"                                    
+                                >
+                                <i data-bg="/Content/images/SVG/hardware.svg" width="25" height="25" class="ps-nav__icon lazy"></i>
+                                <a href="/Hardware" role="menuitem" tabindex="0">Hardware</a>
+                                <i :class="{ 'pi-sm pi-arrow-down-fill svg-fill-red': currentCategory == 'Sortiment_Hardware', 'ki-s pi-chev-right bg-gray': currentCategory !== 'Sortiment_Hardware' }"></i>
+                            </li>
+                            <li class="ps-nav__cat " role="presentation" @mouseout="hideMenuLevel; isHovered = false" :class="[{'hovered' : isHovered},{active: currentCategory == 'Sortiment_HusHave'}]"
+                                @touchmove.passive="touchDrag = true;" 
+                                @touchStart.passive="touchDrag = false;"
+                                @touchend="getMenuItems('Sortiment_HusHave', 'Hus &amp; Have', columns, true);"                                    
+                                @mouseover="isMobile ? false : throttleMenu('Sortiment_HusHave', 'Hus &amp; Have', columns);"                                    
+                                >
+                                <i data-bg="/Content/images/SVG/hushave.svg" width="25" height="25" class="ps-nav__icon lazy"></i>
+                                <a href="/Hus-Have" role="menuitem" tabindex="0">Hus &amp; Have</a>
+                                <i :class="{ 'pi-sm pi-arrow-down-fill svg-fill-red': currentCategory == 'Sortiment_HusHave', 'ki-s pi-chev-right bg-gray': currentCategory !== 'Sortiment_HusHave' }"></i>
+                            </li>
+                            <li class="ps-nav__cat " role="presentation" @mouseout="hideMenuLevel; isHovered = false" :class="[{'hovered' : isHovered},{active: currentCategory == 'Sortiment_Husholdning'}]"
+                                @touchmove.passive="touchDrag = true;" 
+                                @touchStart.passive="touchDrag = false;"
+                                @touchend="getMenuItems('Sortiment_Husholdning', 'Husholdning', columns, true);"                                    
+                                @mouseover="isMobile ? false : throttleMenu('Sortiment_Husholdning', 'Husholdning', columns);"                                    
+                                >
+                                <i data-bg="/Content/images/SVG/husholdning.svg" width="25" height="25" class="ps-nav__icon lazy"></i>
+                                <a href="/Husholdning" role="menuitem" tabindex="0">Husholdning</a>
+                                <i :class="{ 'pi-sm pi-arrow-down-fill svg-fill-red': currentCategory == 'Sortiment_Husholdning', 'ki-s pi-chev-right bg-gray': currentCategory !== 'Sortiment_Husholdning' }"></i>
+                            </li>
+                            <li class="ps-nav__cat " role="presentation" @mouseout="hideMenuLevel; isHovered = false" :class="[{'hovered' : isHovered},{active: currentCategory == 'Sortiment_KablerStik'}]"
+                                @touchmove.passive="touchDrag = true;" 
+                                @touchStart.passive="touchDrag = false;"
+                                @touchend="getMenuItems('Sortiment_KablerStik', 'Kabler &amp; Stik', columns, true);"                                    
+                                @mouseover="isMobile ? false : throttleMenu('Sortiment_KablerStik', 'Kabler &amp; Stik', columns);"                                    
+                                >
+                                <i data-bg="/Content/images/SVG/kablerstik.svg" width="25" height="25" class="ps-nav__icon lazy"></i>
+                                <a href="/Kabler-Stik" role="menuitem" tabindex="0">Kabler &amp; Stik</a>
+                                <i :class="{ 'pi-sm pi-arrow-down-fill svg-fill-red': currentCategory == 'Sortiment_KablerStik', 'ki-s pi-chev-right bg-gray': currentCategory !== 'Sortiment_KablerStik' }"></i>
+                            </li>
+                            <li class="ps-nav__cat " role="presentation" @mouseout="hideMenuLevel; isHovered = false" :class="[{'hovered' : isHovered},{active: currentCategory == 'office-supplies'}]"
+                                @touchmove.passive="touchDrag = true;" 
+                                @touchStart.passive="touchDrag = false;"
+                                @touchend="getMenuItems('office-supplies', 'Kontor- og hobbyartikler', columns, true);"                                    
+                                @mouseover="isMobile ? false : throttleMenu('office-supplies', 'Kontor- og hobbyartikler', columns);"                                    
+                                >
+                                <i data-bg="/Content/images/SVG/office-supplies.svg" width="25" height="25" class="ps-nav__icon lazy"></i>
+                                <a href="/Kontor-og-hobbyartikler" role="menuitem" tabindex="0">Kontor- og hobbyartikler</a>
+                                <i :class="{ 'pi-sm pi-arrow-down-fill svg-fill-red': currentCategory == 'office-supplies', 'ki-s pi-chev-right bg-gray': currentCategory !== 'office-supplies' }"></i>
+                            </li>
+                            <li class="ps-nav__cat " role="presentation" @mouseout="hideMenuLevel; isHovered = false" :class="[{'hovered' : isHovered},{active: currentCategory == 'Sortiment_MobilGPS'}]"
+                                @touchmove.passive="touchDrag = true;" 
+                                @touchStart.passive="touchDrag = false;"
+                                @touchend="getMenuItems('Sortiment_MobilGPS', 'Mobil &amp; Tablet', columns, true);"                                    
+                                @mouseover="isMobile ? false : throttleMenu('Sortiment_MobilGPS', 'Mobil &amp; Tablet', columns);"                                    
+                                >
+                                <i data-bg="/Content/images/SVG/mobilgps.svg" width="25" height="25" class="ps-nav__icon lazy"></i>
+                                <a href="/Mobil-Tablet" role="menuitem" tabindex="0">Mobil &amp; Tablet</a>
+                                <i :class="{ 'pi-sm pi-arrow-down-fill svg-fill-red': currentCategory == 'Sortiment_MobilGPS', 'ki-s pi-chev-right bg-gray': currentCategory !== 'Sortiment_MobilGPS' }"></i>
+                            </li>
+                            <li class="ps-nav__cat " role="presentation" @mouseout="hideMenuLevel; isHovered = false" :class="[{'hovered' : isHovered},{active: currentCategory == 'Sortiment_Netvaerk'}]"
+                                @touchmove.passive="touchDrag = true;" 
+                                @touchStart.passive="touchDrag = false;"
+                                @touchend="getMenuItems('Sortiment_Netvaerk', 'Netv&#230;rk', columns, true);"                                    
+                                @mouseover="isMobile ? false : throttleMenu('Sortiment_Netvaerk', 'Netv&#230;rk', columns);"                                    
+                                >
+                                <i data-bg="/Content/images/SVG/netvaerk.svg" width="25" height="25" class="ps-nav__icon lazy"></i>
+                                <a href="/Netvaerk" role="menuitem" tabindex="0">Netv&#230;rk</a>
+                                <i :class="{ 'pi-sm pi-arrow-down-fill svg-fill-red': currentCategory == 'Sortiment_Netvaerk', 'ki-s pi-chev-right bg-gray': currentCategory !== 'Sortiment_Netvaerk' }"></i>
+                            </li>
+                            <li class="ps-nav__cat " role="presentation" @mouseout="hideMenuLevel; isHovered = false" :class="[{'hovered' : isHovered},{active: currentCategory == 'Sortiment_PersonligPleje'}]"
+                                @touchmove.passive="touchDrag = true;" 
+                                @touchStart.passive="touchDrag = false;"
+                                @touchend="getMenuItems('Sortiment_PersonligPleje', 'Personlig pleje', columns, true);"                                    
+                                @mouseover="isMobile ? false : throttleMenu('Sortiment_PersonligPleje', 'Personlig pleje', columns);"                                    
+                                >
+                                <i data-bg="/Content/images/SVG/personligpleje.svg" width="25" height="25" class="ps-nav__icon lazy"></i>
+                                <a href="/Personlig-pleje" role="menuitem" tabindex="0">Personlig pleje</a>
+                                <i :class="{ 'pi-sm pi-arrow-down-fill svg-fill-red': currentCategory == 'Sortiment_PersonligPleje', 'ki-s pi-chev-right bg-gray': currentCategory !== 'Sortiment_PersonligPleje' }"></i>
+                            </li>
+                            <li class="ps-nav__cat " role="presentation" @mouseout="hideMenuLevel; isHovered = false" :class="[{'hovered' : isHovered},{active: currentCategory == 'Sortiment_PrintereForbrugstoffer'}]"
+                                @touchmove.passive="touchDrag = true;" 
+                                @touchStart.passive="touchDrag = false;"
+                                @touchend="getMenuItems('Sortiment_PrintereForbrugstoffer', 'Printere &amp; Forbrugsstoffer', columns, true);"                                    
+                                @mouseover="isMobile ? false : throttleMenu('Sortiment_PrintereForbrugstoffer', 'Printere &amp; Forbrugsstoffer', columns);"                                    
+                                >
+                                <i data-bg="/Content/images/SVG/printereforbrugstoffer.svg" width="25" height="25" class="ps-nav__icon lazy"></i>
+                                <a href="/Printere-Forbrugsstoffer" role="menuitem" tabindex="0">Printere &amp; Forbrugsstoffer</a>
+                                <i :class="{ 'pi-sm pi-arrow-down-fill svg-fill-red': currentCategory == 'Sortiment_PrintereForbrugstoffer', 'ki-s pi-chev-right bg-gray': currentCategory !== 'Sortiment_PrintereForbrugstoffer' }"></i>
+                            </li>
+                            <li class="ps-nav__cat " role="presentation" @mouseout="hideMenuLevel; isHovered = false" :class="[{'hovered' : isHovered},{active: currentCategory == 'Sortiment_Software'}]"
+                                @touchmove.passive="touchDrag = true;" 
+                                @touchStart.passive="touchDrag = false;"
+                                @touchend="getMenuItems('Sortiment_Software', 'Software', columns, true);"                                    
+                                @mouseover="isMobile ? false : throttleMenu('Sortiment_Software', 'Software', columns);"                                    
+                                >
+                                <i data-bg="/Content/images/SVG/software.svg" width="25" height="25" class="ps-nav__icon lazy"></i>
+                                <a href="/Software" role="menuitem" tabindex="0">Software</a>
+                                <i :class="{ 'pi-sm pi-arrow-down-fill svg-fill-red': currentCategory == 'Sortiment_Software', 'ki-s pi-chev-right bg-gray': currentCategory !== 'Sortiment_Software' }"></i>
+                            </li>
+                            <li class="ps-nav__cat " role="presentation" @mouseout="hideMenuLevel; isHovered = false" :class="[{'hovered' : isHovered},{active: currentCategory == 'games-gaming'}]"
+                                @touchmove.passive="touchDrag = true;" 
+                                @touchStart.passive="touchDrag = false;"
+                                @touchend="getMenuItems('games-gaming', 'Spil &amp; Gaming', columns, true);"                                    
+                                @mouseover="isMobile ? false : throttleMenu('games-gaming', 'Spil &amp; Gaming', columns);"                                    
+                                >
+                                <i data-bg="/Content/images/SVG/games-gaming.svg" width="25" height="25" class="ps-nav__icon lazy"></i>
+                                <a href="/Spil-Gaming" role="menuitem" tabindex="0">Spil &amp; Gaming</a>
+                                <i :class="{ 'pi-sm pi-arrow-down-fill svg-fill-red': currentCategory == 'games-gaming', 'ki-s pi-chev-right bg-gray': currentCategory !== 'games-gaming' }"></i>
+                            </li>
+                            <li class="ps-nav__cat " role="presentation" @mouseout="hideMenuLevel; isHovered = false" :class="[{'hovered' : isHovered},{active: currentCategory == 'Sortiment_TVHifi'}]"
+                                @touchmove.passive="touchDrag = true;" 
+                                @touchStart.passive="touchDrag = false;"
+                                @touchend="getMenuItems('Sortiment_TVHifi', 'Tv og lyd', columns, true);"                                    
+                                @mouseover="isMobile ? false : throttleMenu('Sortiment_TVHifi', 'Tv og lyd', columns);"                                    
+                                >
+                                <i data-bg="/Content/images/SVG/tvhifi.svg" width="25" height="25" class="ps-nav__icon lazy"></i>
+                                <a href="/Tv-og-lyd" role="menuitem" tabindex="0">Tv og lyd</a>
+                                <i :class="{ 'pi-sm pi-arrow-down-fill svg-fill-red': currentCategory == 'Sortiment_TVHifi', 'ki-s pi-chev-right bg-gray': currentCategory !== 'Sortiment_TVHifi' }"></i>
+                            </li>
+            </ul>
+        </div>
+        <sub-menu @mouseover="clearTimeOut(menuTimer);" :nodes="data[activeId]" @createbackdrop="createBackDrop" @hidemenulevel="hideMenuLevel" :hover="hover" :categoryname="categoryName" :menulevel="menulevel + 1"></sub-menu>        
+    </nav>    
+</aside>
+        <div id="productMenu" class="visible-md visible-lg"></div>
+            <div class="hidden-xs hidden-sm mt-2">
+                <div class="mb-2"><div data-vueapp="campaigns" class="site-bottom-left" id="c81cecc2c6c754ff4bdfbc548018d6412" element-id="81cecc2c-6c75-4ff4-bdfb-c548018d6412" data="e30=">
+</div>
+</div><div data-vueapp="campaigns" class="site-bottom-left-2" id="c49271a34d03945e7814b28d0918bb617" element-id="49271a34-d039-45e7-814b-28d0918bb617" data="e30=">
+</div>
+
+            </div>
+    </div>
+    <main class="col-xs-12 col-md-9">
+            <div>
+                <div class="site-bar-breadcrumbs d-flex mb-2">
+                    <ol class="breadcrumb d-flex small" id="breadcrumbs" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemprop="itemListElement" itemtype="http://schema.org/ListItem"><a class="p-0" href="/" itemprop="item"><span itemprop="name">Forside</span></a><meta itemprop="position" content="1" /></li>
+
+
+<li itemscope itemprop="itemListElement" itemtype="http://schema.org/ListItem"><a class="p-0" href="/Stationaer-Mini-PC-Barebone" itemprop="item"><span itemprop="name">Stationær - Mini PC / Barebone</span></a><meta itemprop="position" content="2" /></li></ol>
+                </div>
+            </div>
+        
+        
+
+    <div class="site-campaignElement" data-campaign-element-id="3a8cce4d-dd57-4e95-b021-6bc164bbe0d8">
+        <a data-action="campaignClick" data-id="b138c5f2-1bb1-48b9-a481-94f3b045bac9" data-name="Proshop Auktion / Auctions" data-creative="3a8cce4d-dd57-4e95-b021-6bc164bbe0d8" data-position="category-top" href="/Auctions" target="_self"><img src="/Images/Proshop-auktion-852x350-CTA_062a2213209e.jpg"></a>
+    </div>
+
+
+
+
+
+
+
+
+        <span data-type="category" data-siteid="proshop.dk" data-categoryid="stationaer-minipc-barebone"></span>
+    <div id="categoryLongDesc" class="position-relative pb-4">
+        <div class="site-fadeout-container" id="categoryInnerContainer">
+            <h1>Mini Computer </h1><p>Hos proshop.dk har vi et bredt sortiment af mini computere fra de bedste producenter såsom Intel og Gigabyte. En mini computer er kendetegnet ved, at de fylder utroligt lidt. En mini computer er ofte baseret på Intel Atom processorer, men findes også med kraftige Intel Core i3, i5 eller sågar i7 processorer. Vær opmærksom på, at der ofte skal tilkøbes RAM og harddisk til en mini computer. Vi opdaterer løbende sortimentet med de nyeste produkter, så du altid kan finde en computer med de nyeste grafikkort, processorer og meget mere.</p><p><u>Et udvalg af vores populære producenter:</u></p><ul><li><a href="/Stationaer-Mini-PC-Barebone?b=apple"><strong>Apple</strong></a></li><li><a href="/Stationaer-Mini-PC-Barebone?b=asus"><strong>ASUS</strong></a></li><li><a href="/Stationaer-Mini-PC-Barebone?b=gigabyte"><strong>Gigabyte</strong></a></li><li><a href="/Stationaer-Mini-PC-Barebone?b=intel"><strong>Intel</strong></a></li></ul>
+            <div class="w-100 d-flex justify-content-center">
+                <button id="showLess" class="btn site-btn-between site-btn-white site-btn-hasborder mt-4" ><span>Fold sammen</span></button>
+            </div>
+        </div>
+        <div class="w-100 justify-content-center d-flex">
+            <button id="showMore" class="position-absolute btn site-btn-between site-btn-white site-btn-hasborder"><span>Læs mere</span></button>
+        </div>
+    </div>
+    <div class="longDescShadow position-relative"></div>
+    <div id="productList" class="w-100 new-design">
+        <div class="site-filter-sorting clearfix pt-2">
+            <facet-collections :facet-collections="facetCollections">
+                <template v-slot:show-more-text>
+                    Vis flere
+                </template>
+                <template v-slot:show-less-text>
+                    Vis færre
+                </template>
+                <template v-slot:reset-text>
+                    Nulstil alle filtre
+                </template>
+            </facet-collections>
+        </div>
+
+<ul class="site-panel list-unstyled site-productlist-container pt-1" role="list" id="products" data-gtm="eyJldmVudCI6InZpZXdfaXRlbV9saXN0IiwiZWNvbW1lcmNlIjp7Iml0ZW1zIjpbeyJpdGVtX2lkIjoiMzI1MjY0OCIsIml0ZW1fbmFtZSI6IkFTVVMgTlVDIDEzIFBSTyAtIENvcmUgNyAtIDBHQiAvIDBUQiIsIml0ZW1fYnJhbmQiOiJBU1VTIiwiaXRlbV9jYXRlZ29yeSI6IlN0YXRpb27mciAtIE1pbmkgUEMgLyBCYXJlYm9uZSIsInByaWNlIjo0Mzk5LjAwMCwicXVhbnRpdHkiOjF9LHsiaXRlbV9pZCI6IjMzNDk4NzkiLCJpdGVtX25hbWUiOiJBU1VTIE5VQyAxNCBQZXJmb3JtYW5jZSBSTlVDMTRTUktVOTEwMDAwSSIsIml0ZW1fYnJhbmQiOiJBU1VTIiwiaXRlbV9jYXRlZ29yeSI6IlN0YXRpb27mciAtIE1pbmkgUEMgLyBCYXJlYm9uZSIsInByaWNlIjoxMjQ5OS4wMDAsInF1YW50aXR5IjoxfSx7Iml0ZW1faWQiOiIzMjUyNjQ2IiwiaXRlbV9uYW1lIjoiQVNVUyBOVUMgMTMgUFJPIC0gQ29yZSAzIC0gMEdCIC8gMFRCIiwiaXRlbV9icmFuZCI6IkFTVVMiLCJpdGVtX2NhdGVnb3J5IjoiU3RhdGlvbuZyIC0gTWluaSBQQyAvIEJhcmVib25lIiwicHJpY2UiOjI2OTkuMDAwLCJxdWFudGl0eSI6MX0seyJpdGVtX2lkIjoiMzI1MDQzMCIsIml0ZW1fbmFtZSI6IkFTVVMgSW50ZWwgTlVDIDE0IFBybyAtIENvcmUgMyAtIDBHQiAvIDBUQiIsIml0ZW1fYnJhbmQiOiJBU1VTIiwiaXRlbV9jYXRlZ29yeSI6IlN0YXRpb27mciAtIE1pbmkgUEMgLyBCYXJlYm9uZSIsInByaWNlIjoyOTk5LjAwMCwicXVhbnRpdHkiOjF9LHsiaXRlbV9pZCI6IjMyNzUyNjciLCJpdGVtX25hbWUiOiJBU1VTIE5VQyAxNCBQcm8rIFJOVUMxNFJWSFY3MDAwMDBJIiwiaXRlbV9icmFuZCI6IkFTVVMiLCJpdGVtX2NhdGVnb3J5IjoiU3RhdGlvbuZyIC0gTWluaSBQQyAvIEJhcmVib25lIiwicHJpY2UiOjY5OTkuMDAwLCJxdWFudGl0eSI6MX0seyJpdGVtX2lkIjoiMzE2MTkxMCIsIml0ZW1fbmFtZSI6IkFTVVMgSW50ZWwgTnVjIDEzIFBybyBLaXQgfCBDb3JlIGk3IHwgQmFyZWJvbmUiLCJpdGVtX2JyYW5kIjoiQVNVUyIsIml0ZW1fY2F0ZWdvcnkiOiJTdGF0aW9u5nIgLSBNaW5pIFBDIC8gQmFyZWJvbmUiLCJwcmljZSI6NDc5OS4wMDAsInF1YW50aXR5IjoxfSx7Iml0ZW1faWQiOiIzMjUyNjQwIiwiaXRlbV9uYW1lIjoiQVNVUyBOVUMgMTIgUHJvIEtpdCAtIENvcmUgNSAtIDBHQiAvIDBUQiIsIml0ZW1fYnJhbmQiOiJBU1VTIiwiaXRlbV9jYXRlZ29yeSI6IlN0YXRpb27mciAtIE1pbmkgUEMgLyBCYXJlYm9uZSIsInByaWNlIjozMDk5LjAwMCwicXVhbnRpdHkiOjF9LHsiaXRlbV9pZCI6IjMyODc5NDUiLCJpdGVtX25hbWUiOiJBU1VTIE5VQyAxMyBSdWdnZWQgVGFsbCAtIFNGRiBBdG9tIHg3IHg3NDI1RSAtIDAgR0IgLSBTU0QgMCBHQiIsIml0ZW1fYnJhbmQiOiJBU1VTIiwiaXRlbV9jYXRlZ29yeSI6IlN0YXRpb27mciAtIE1pbmkgUEMgLyBCYXJlYm9uZSIsInByaWNlIjoyMzk5LjAwMCwicXVhbnRpdHkiOjF9LHsiaXRlbV9pZCI6IjMyNjM2NzkiLCJpdGVtX25hbWUiOiJBU1VTIE5VQyAxNCBQcm8rIENvcmUgVWx0cmEgNyAvIHZQcm8gLSAwR0IgLyAwVEIiLCJpdGVtX2JyYW5kIjoiQVNVUyIsIml0ZW1fY2F0ZWdvcnkiOiJTdGF0aW9u5nIgLSBNaW5pIFBDIC8gQmFyZWJvbmUiLCJwcmljZSI6NzI5OS4wMDAsInF1YW50aXR5IjoxfSx7Iml0ZW1faWQiOiIzMjUyNjMzIiwiaXRlbV9uYW1lIjoiQVNVUyBOVUMgMTIgUHJvIEtpdCAtICBDb3JlIDcgLSAwR0IgLyAwVEIiLCJpdGVtX2JyYW5kIjoiQVNVUyIsIml0ZW1fY2F0ZWdvcnkiOiJTdGF0aW9u5nIgLSBNaW5pIFBDIC8gQmFyZWJvbmUiLCJwcmljZSI6Mzc5OS4wMDAsInF1YW50aXR5IjoxfSx7Iml0ZW1faWQiOiIzMjUyNjU1IiwiaXRlbV9uYW1lIjoiQVNVUyBOVUMgMTQgUHJvKyBLaXQgLSBVbHRyYSA3IC0gMEdCIC8gMFRCIiwiaXRlbV9icmFuZCI6IkFTVVMiLCJpdGVtX2NhdGVnb3J5IjoiU3RhdGlvbuZyIC0gTWluaSBQQyAvIEJhcmVib25lIiwicHJpY2UiOjU2OTkuMDAwLCJxdWFudGl0eSI6MX0seyJpdGVtX2lkIjoiMzEzNTYxOCIsIml0ZW1fbmFtZSI6IkFTVVMgSW50ZWwgTnVjIDEyIFBybyBLaXQgfCBDb3JlIGkzIHwgQmFyZWJvbmUiLCJpdGVtX2JyYW5kIjoiQVNVUyIsIml0ZW1fY2F0ZWdvcnkiOiJTdGF0aW9u5nIgLSBNaW5pIFBDIC8gQmFyZWJvbmUiLCJwcmljZSI6Mjc5OS4wMDAsInF1YW50aXR5IjoxfSx7Iml0ZW1faWQiOiIzMzA0OTA0IiwiaXRlbV9uYW1lIjoiQVNVUyBOVUMgMTMgUHJvIFNsaW0gS2l0IFJOVUMxM0w1S1Y3MDAwMDBJIiwiaXRlbV9icmFuZCI6IkFTVVMiLCJpdGVtX2NhdGVnb3J5IjoiU3RhdGlvbuZyIC0gTWluaSBQQyAvIEJhcmVib25lIiwicHJpY2UiOjYzOTkuMDAwLCJxdWFudGl0eSI6MX0seyJpdGVtX2lkIjoiMzI1MjY0MSIsIml0ZW1fbmFtZSI6IkFTVVMgTlVDIDEyIFBybyBLaXQgLSBDb3JlIDcgLSAwR0IgLyAwVEIiLCJpdGVtX2JyYW5kIjoiQVNVUyIsIml0ZW1fY2F0ZWdvcnkiOiJTdGF0aW9u5nIgLSBNaW5pIFBDIC8gQmFyZWJvbmUiLCJwcmljZSI6Mzg5OS4wMDAsInF1YW50aXR5IjoxfSx7Iml0ZW1faWQiOiIzMjUyNjQ3IiwiaXRlbV9uYW1lIjoiQVNVUyBOVUMgMTMgUFJPIC0gQ29yZSA1IC0gMEdCIC8gMFRCIiwiaXRlbV9icmFuZCI6IkFTVVMiLCJpdGVtX2NhdGVnb3J5IjoiU3RhdGlvbuZyIC0gTWluaSBQQyAvIEJhcmVib25lIiwicHJpY2UiOjM2OTkuMDAwLCJxdWFudGl0eSI6MX0seyJpdGVtX2lkIjoiMzI1MjY0NCIsIml0ZW1fbmFtZSI6IkFTVVMgTlVDIDEzIFBSTyAtIENvcmUgNyAtIDBHQiAvIDBUQiIsIml0ZW1fYnJhbmQiOiJBU1VTIiwiaXRlbV9jYXRlZ29yeSI6IlN0YXRpb27mciAtIE1pbmkgUEMgLyBCYXJlYm9uZSIsInByaWNlIjo0NTk5LjAwMCwicXVhbnRpdHkiOjF9LHsiaXRlbV9pZCI6IjMzMTM1OTQiLCJpdGVtX25hbWUiOiJBcHBsZSBNYWMgbWluaSB8IE00IHwgMTZHQiB8IDI1NkdCIiwiaXRlbV9icmFuZCI6IkFwcGxlIiwiaXRlbV9jYXRlZ29yeSI6IlN0YXRpb27mciAtIE1pbmkgUEMgLyBCYXJlYm9uZSIsInByaWNlIjo1MTU2LjAwMCwicXVhbnRpdHkiOjF9LHsiaXRlbV9pZCI6IjMzNDkwNDMiLCJpdGVtX25hbWUiOiJBU1VTIE5VQyAxNCBFc3NlbnRpYWwgS2l0IFJOVUMxNE1OSzE1MDAwMDIiLCJpdGVtX2JyYW5kIjoiQVNVUyIsIml0ZW1fY2F0ZWdvcnkiOiJTdGF0aW9u5nIgLSBNaW5pIFBDIC8gQmFyZWJvbmUiLCJwcmljZSI6MTI5MS4wMDAsInF1YW50aXR5IjoxfSx7Iml0ZW1faWQiOiIzMzQ5MDQ5IiwiaXRlbV9uYW1lIjoiQVNVUyBOVUMgMTQgRXNzZW50aWFsIEtpdCBSTlVDMTRNTkszNTAwMDAyIiwiaXRlbV9icmFuZCI6IkFTVVMiLCJpdGVtX2NhdGVnb3J5IjoiU3RhdGlvbuZyIC0gTWluaSBQQyAvIEJhcmVib25lIiwicHJpY2UiOjE4OTguMDAwLCJxdWFudGl0eSI6MX0seyJpdGVtX2lkIjoiMzMxMzU5NSIsIml0ZW1fbmFtZSI6IkFwcGxlIE1hYyBtaW5pIHwgTTQgfCAyNEdCIHwgNTEyR0IiLCJpdGVtX2JyYW5kIjoiQXBwbGUiLCJpdGVtX2NhdGVnb3J5IjoiU3RhdGlvbuZyIC0gTWluaSBQQyAvIEJhcmVib25lIiwicHJpY2UiOjg4NzIuMDAwLCJxdWFudGl0eSI6MX0seyJpdGVtX2lkIjoiMzMxMzU5MyIsIml0ZW1fbmFtZSI6IkFwcGxlIE1hYyBtaW5pIHwgTTQgfCAxNkdCIHwgNTEyR0IiLCJpdGVtX2JyYW5kIjoiQXBwbGUiLCJpdGVtX2NhdGVnb3J5IjoiU3RhdGlvbuZyIC0gTWluaSBQQyAvIEJhcmVib25lIiwicHJpY2UiOjY4ODMuMDAwLCJxdWFudGl0eSI6MX0seyJpdGVtX2lkIjoiMzMxMzU5MiIsIml0ZW1fbmFtZSI6IkFwcGxlIE1hYyBtaW5pIHwgTTQgUHJvIHwgMjRHQiB8IDUxMkdCIiwiaXRlbV9icmFuZCI6IkFwcGxlIiwiaXRlbV9jYXRlZ29yeSI6IlN0YXRpb27mciAtIE1pbmkgUEMgLyBCYXJlYm9uZSIsInByaWNlIjoxMjU4MS4wMDAsInF1YW50aXR5IjoxfSx7Iml0ZW1faWQiOiIzMzQ1OTQ4IiwiaXRlbV9uYW1lIjoiTWluaXNmb3J1bSBNSU5JLVBDIE1pbmlzIEZvcnVtIFVNNzkwIFBybyBSeXplbiA5IDc5NDBIUyAzMkdCIFJBTSArIDFUQiIsIml0ZW1fYnJhbmQiOiJNaW5pc2ZvcnVtIiwiaXRlbV9jYXRlZ29yeSI6IlN0YXRpb27mciAtIE1pbmkgUEMgLyBCYXJlYm9uZSIsInByaWNlIjo1NDc5LjAwMCwicXVhbnRpdHkiOjF9LHsiaXRlbV9pZCI6IjMzNTYwNzMiLCJpdGVtX25hbWUiOiJBU1VTIE5VQyAxNSBQcm8rIFJOVUMxNUNSU1U5MDAwMDIiLCJpdGVtX2JyYW5kIjoiQVNVUyIsIml0ZW1fY2F0ZWdvcnkiOiJTdGF0aW9u5nIgLSBNaW5pIFBDIC8gQmFyZWJvbmUiLCJwcmljZSI6NzY5OS4wMDAsInF1YW50aXR5IjoxfSx7Iml0ZW1faWQiOiIzMzU2MDcxIiwiaXRlbV9uYW1lIjoiQVNVUyBOVUMgMTUgUHJvIFRhbGwgS2l0IFJOVUMxNUNSSFU3MDAwMDIiLCJpdGVtX2JyYW5kIjoiQVNVUyIsIml0ZW1fY2F0ZWdvcnkiOiJTdGF0aW9u5nIgLSBNaW5pIFBDIC8gQmFyZWJvbmUiLCJwcmljZSI6NTUxOC4wMDAsInF1YW50aXR5IjoxfV19fQ==">
+    <li class="site-active-results-container mb-1 mt-0">Produkter i din s&#248;gning:  151</li>
+        <li class="site-productlist-item site-customerCenterCard position-relative" product>
+            <div class="mr-2">
+                <a class="show" href="/Stationaer-Mini-PC-Barebone/ASUS-NUC-13-PRO-Core-7-0GB-0TB/3252648" title="ASUS NUC 13 PRO - Core 7 - 0GB / 0TB - 90AR00C1-M000K0"><img alt="Stationær - Mini PC / Barebone - ASUS NUC 13 PRO - Core 7 - 0GB / 0TB - 90AR00C1-M000K0" height="116" src="/Images/174x116/3252648_0a24a038b8b4.jpg" width="174" /></a>
+                    <div data-energy data-cpn="S29294567" data-zoom="50" class="hidden pl-2 pt-2">
+                        <img /><br /><button class="btn-link p-0"><span class="site-energy-datasheet">Produktdatablad</span></button>
+                    </div>
+            </div>
+            <div class="site-productTextContainer position-relative">
+    <div class="site-image-badges-scrollContainer">
+       
+
+        <div class="site-image-badge-container-lg clearfix">
+                    <span class="btn site-image-badge-nostyle site-image-badge-default">HOT</span>
+        </div>
+
+        
+    </div>
+
+                <a class="site-product-link" href="/Stationaer-Mini-PC-Barebone/ASUS-NUC-13-PRO-Core-7-0GB-0TB/3252648">
+                    <h2 product-display-name class="truncate-overflow">ASUS NUC 13 PRO - Core 7 - 0GB / 0TB</h2>
+                    Barebone, mini PC 1 x Core i7 1360P / op til 5 GHz, RAM 0 GB, Intel Iris Xe Graphics, Bluetooth 5.2, IEEE 802.11ax (Wi-Fi 6E), Gigabit Ethernet, 2.5 Gigabit Ethernet, sort
+                </a>
+            </div>
+            <div class="priceContainer">
+                <div class="mt-2 price-container mb-2">
+
+
+                                <span class="site-currency-lg  has-presales-price">4.399,00 kr.</span>
+                            <span class="hidden-xs">(3.519,20 kr.)</span>
+                </div>
+                <div class="d-flex justify-content-around">
+                        <form action="/Basket/AddItem" method="post" novalidate="novalidate" data-type="async-minibasket">
+                            <input name="productId" type="hidden" value="3252648" />
+                            <input name="token" type="hidden" value="02325207aeda" />
+                                <button class="btn site-btn-tall site-btn-green w-100" type="submit" data-gtm-item-id="3252648">
+                                    <i class="ki ki-s pi-cart-fill"></i>&nbsp;<span class="">Køb</span>
+                                </button>
+                            <small class="mt-1 d-block hidden-xs text-center">3252648</small>
+                        </form>
+                </div>
+            </div>
+            <div class="d-flex site-stock site-stock-sm mt-2">
+                <div class="site-stock-icon site-icon-stock-in"></div>
+                <div class="site-stock-text">P&#229; lager – Levering i morgen (bestil inden kl. 19)</div>
+            </div>
+        </li>
+        <li class="site-productlist-item site-customerCenterCard position-relative" product>
+            <div class="mr-2">
+                <a class="show" href="/Stationaer-Mini-PC-Barebone/ASUS-NUC-14-Performance-RNUC14SRKU910000I/3349879" title="ASUS NUC 14 Performance RNUC14SRKU910000I - 90AR0042-M001K0"><img alt="Stationær - Mini PC / Barebone - ASUS NUC 14 Performance RNUC14SRKU910000I - 90AR0042-M001K0" height="116" src="/Images/174x116/3349879_8ef90dac49c4.jpg" width="174" /></a>
+                    <div data-energy data-cpn="S29529768" data-zoom="50" class="hidden pl-2 pt-2">
+                        <img /><br /><button class="btn-link p-0"><span class="site-energy-datasheet">Produktdatablad</span></button>
+                    </div>
+            </div>
+            <div class="site-productTextContainer position-relative">
+    <div class="site-image-badges-scrollContainer">
+       
+
+        <div class="site-image-badge-container-lg clearfix">
+                    <span class="btn site-image-badge-nostyle site-image-badge-default">HOT</span>
+        </div>
+
+        
+    </div>
+
+                <a class="site-product-link" href="/Stationaer-Mini-PC-Barebone/ASUS-NUC-14-Performance-RNUC14SRKU910000I/3349879">
+                    <h2 product-display-name class="truncate-overflow">ASUS NUC 14 Performance RNUC14SRKU910000I</h2>
+                    Barebone, mini PC 1 x Core Ultra 9 185H / op til 5.1 GHz, RAM 0 GB, GeForce RTX 4070, IEEE 802.11ax (Wi-Fi 6E), Bluetooth 5.3, Gigabit Ethernet, 2.5 Gigabit Ethernet, sort
+                </a>
+            </div>
+            <div class="priceContainer">
+                <div class="mt-2 price-container mb-2">
+
+
+                                <span class="site-currency-lg  has-presales-price">12.499,00 kr.</span>
+                            <span class="hidden-xs">(9.999,20 kr.)</span>
+                </div>
+                <div class="d-flex justify-content-around">
+                        <form action="/Basket/AddItem" method="post" novalidate="novalidate" data-type="async-minibasket">
+                            <input name="productId" type="hidden" value="3349879" />
+                            <input name="token" type="hidden" value="80a65bb04778" />
+                                <button class="btn site-btn-tall site-btn-green w-100" type="submit" data-gtm-item-id="3349879">
+                                    <i class="ki ki-s pi-cart-fill"></i>&nbsp;<span class="">Køb</span>
+                                </button>
+                            <small class="mt-1 d-block hidden-xs text-center">3349879</small>
+                        </form>
+                </div>
+            </div>
+            <div class="d-flex site-stock site-stock-sm mt-2">
+                <div class="site-stock-icon site-icon-stock-in"></div>
+                <div class="site-stock-text">P&#229; lager - 1-2 dages levering</div>
+            </div>
+        </li>
+        <li class="site-productlist-item site-customerCenterCard position-relative" product>
+            <div class="mr-2">
+                <a class="show" href="/Stationaer-Mini-PC-Barebone/ASUS-NUC-13-PRO-Core-3-0GB-0TB/3252646" title="ASUS NUC 13 PRO - Core 3 - 0GB / 0TB - 90AR00C1-M00040"><img alt="Stationær - Mini PC / Barebone - ASUS NUC 13 PRO - Core 3 - 0GB / 0TB - 90AR00C1-M00040" height="116" src="/Images/174x116/3252646_57915f4a6693.jpg" width="174" /></a>
+                    <div data-energy data-cpn="S29294571" data-zoom="50" class="hidden pl-2 pt-2">
+                        <img /><br /><button class="btn-link p-0"><span class="site-energy-datasheet">Produktdatablad</span></button>
+                    </div>
+            </div>
+            <div class="site-productTextContainer position-relative">
+    <div class="site-image-badges-scrollContainer">
+       
+
+        <div class="site-image-badge-container-lg clearfix">
+                    <span class="btn site-image-badge-nostyle site-image-badge-default">HOT</span>
+        </div>
+
+        
+    </div>
+
+                <a class="site-product-link" href="/Stationaer-Mini-PC-Barebone/ASUS-NUC-13-PRO-Core-3-0GB-0TB/3252646">
+                    <h2 product-display-name class="truncate-overflow">ASUS NUC 13 PRO - Core 3 - 0GB / 0TB</h2>
+                    Barebone, mini PC 1 x Core i3 i3-1315U / op til 4.5 GHz, RAM 0 GB, UHD Graphics, IEEE 802.11ax (Wi-Fi 6E), Gigabit Ethernet, 2.5 Gigabit Ethernet, Bluetooth 5.2, sort
+                </a>
+            </div>
+            <div class="priceContainer">
+                <div class="mt-2 price-container mb-2">
+
+
+                                <span class="site-currency-lg  has-presales-price">2.699,00 kr.</span>
+                            <span class="hidden-xs">(2.159,20 kr.)</span>
+                </div>
+                <div class="d-flex justify-content-around">
+                        <form action="/Basket/AddItem" method="post" novalidate="novalidate" data-type="async-minibasket">
+                            <input name="productId" type="hidden" value="3252646" />
+                            <input name="token" type="hidden" value="31d5e1bb4a88" />
+                                <button class="btn site-btn-tall site-btn-green w-100" type="submit" data-gtm-item-id="3252646">
+                                    <i class="ki ki-s pi-cart-fill"></i>&nbsp;<span class="">Køb</span>
+                                </button>
+                            <small class="mt-1 d-block hidden-xs text-center">3252646</small>
+                        </form>
+                </div>
+            </div>
+            <div class="d-flex site-stock site-stock-sm mt-2">
+                <div class="site-stock-icon site-icon-stock-in"></div>
+                <div class="site-stock-text">P&#229; lager – Levering i morgen (bestil inden kl. 19)</div>
+            </div>
+        </li>
+        <li class="site-productlist-item site-customerCenterCard position-relative" product>
+            <div class="mr-2">
+                <a class="show" href="/Stationaer-Mini-PC-Barebone/ASUS-Intel-NUC-14-Pro-Core-3-0GB-0TB/3250430" title="ASUS Intel NUC 14 Pro - Core 3 - 0GB / 0TB - 90AR0062-M00040"><img alt="Stationær - Mini PC / Barebone - ASUS Intel NUC 14 Pro - Core 3 - 0GB / 0TB - 90AR0062-M00040" height="116" src="/Images/174x116/3250430_c57138f0b34c.jpg" width="174" /></a>
+                    <div data-energy data-cpn="S29364517" data-zoom="50" class="hidden pl-2 pt-2">
+                        <img /><br /><button class="btn-link p-0"><span class="site-energy-datasheet">Produktdatablad</span></button>
+                    </div>
+            </div>
+            <div class="site-productTextContainer position-relative">
+    <div class="site-image-badges-scrollContainer">
+       
+
+        <div class="site-image-badge-container-lg clearfix">
+                    <span class="btn site-image-badge-nostyle site-image-badge-default">HOT</span>
+        </div>
+
+        
+    </div>
+
+                <a class="site-product-link" href="/Stationaer-Mini-PC-Barebone/ASUS-Intel-NUC-14-Pro-Core-3-0GB-0TB/3250430">
+                    <h2 product-display-name class="truncate-overflow">ASUS Intel NUC 14 Pro - Core 3 - 0GB / 0TB</h2>
+                    Barebone, mini PC 1 x Core 3 100U / op til 4.7 GHz, RAM 0 GB, Intel Graphics, IEEE 802.11ax (Wi-Fi 6E), Gigabit Ethernet, 2.5 Gigabit Ethernet, Bluetooth 5.3, sort
+                </a>
+            </div>
+            <div class="priceContainer">
+                <div class="mt-2 price-container mb-2">
+
+
+                                <span class="site-currency-lg  has-presales-price">2.999,00 kr.</span>
+                            <span class="hidden-xs">(2.399,20 kr.)</span>
+                </div>
+                <div class="d-flex justify-content-around">
+                        <form action="/Basket/AddItem" method="post" novalidate="novalidate" data-type="async-minibasket">
+                            <input name="productId" type="hidden" value="3250430" />
+                            <input name="token" type="hidden" value="71d89add02b3" />
+                                <button class="btn site-btn-tall site-btn-green w-100" type="submit" data-gtm-item-id="3250430">
+                                    <i class="ki ki-s pi-cart-fill"></i>&nbsp;<span class="">Køb</span>
+                                </button>
+                            <small class="mt-1 d-block hidden-xs text-center">3250430</small>
+                        </form>
+                </div>
+            </div>
+            <div class="d-flex site-stock site-stock-sm mt-2">
+                <div class="site-stock-icon site-icon-stock-in"></div>
+                <div class="site-stock-text">P&#229; lager – Levering i morgen (bestil inden kl. 19)</div>
+            </div>
+        </li>
+        <li class="site-productlist-item site-customerCenterCard position-relative" product>
+            <div class="mr-2">
+                <a class="show" href="/Stationaer-Mini-PC-Barebone/ASUS-NUC-14-Pro-RNUC14RVHV700000I/3275267" title="ASUS NUC 14 Pro+ RNUC14RVHV700000I - 90AR0072-M00250"><img alt="Stationær - Mini PC / Barebone - ASUS NUC 14 Pro+ RNUC14RVHV700000I - 90AR0072-M00250" height="116" src="/Images/174x116/3275267_690f7820b83e.jpg" width="174" /></a>
+                    <div data-energy data-cpn="S29364535" data-zoom="50" class="hidden pl-2 pt-2">
+                        <img /><br /><button class="btn-link p-0"><span class="site-energy-datasheet">Produktdatablad</span></button>
+                    </div>
+            </div>
+            <div class="site-productTextContainer position-relative">
+    <div class="site-image-badges-scrollContainer">
+       
+
+        <div class="site-image-badge-container-lg clearfix">
+                    <span class="btn site-image-badge-nostyle site-image-badge-default">HOT</span>
+                    <span class="btn site-image-badge-nostyle site-image-badge-default">F&#197; P&#197; LAGER</span>
+        </div>
+
+        
+    </div>
+
+                <a class="site-product-link" href="/Stationaer-Mini-PC-Barebone/ASUS-NUC-14-Pro-RNUC14RVHV700000I/3275267">
+                    <h2 product-display-name class="truncate-overflow">ASUS NUC 14 Pro+ RNUC14RVHV700000I</h2>
+                    Barebone, mini PC 1 x Core Ultra 7 165H / op til 5 GHz, vPro, RAM 0 GB, Intel Arc Graphics, Gigabit Ethernet, 2.5 Gigabit Ethernet, IEEE 802.11ax (Wi-Fi 6E), Bluetooth 5.3, sort
+                </a>
+            </div>
+            <div class="priceContainer">
+                <div class="mt-2 price-container mb-2">
+
+
+                                <span class="site-currency-lg  has-presales-price">6.999,00 kr.</span>
+                            <span class="hidden-xs">(5.599,20 kr.)</span>
+                </div>
+                <div class="d-flex justify-content-around">
+                        <form action="/Basket/AddItem" method="post" novalidate="novalidate" data-type="async-minibasket">
+                            <input name="productId" type="hidden" value="3275267" />
+                            <input name="token" type="hidden" value="08a89de915e0" />
+                                <button class="btn site-btn-tall site-btn-green w-100" type="submit" data-gtm-item-id="3275267">
+                                    <i class="ki ki-s pi-cart-fill"></i>&nbsp;<span class="">Køb</span>
+                                </button>
+                            <small class="mt-1 d-block hidden-xs text-center">3275267</small>
+                        </form>
+                </div>
+            </div>
+            <div class="d-flex site-stock site-stock-sm mt-2">
+                <div class="site-stock-icon site-icon-stock-in"></div>
+                <div class="site-stock-text">P&#229; lager – Levering i morgen (bestil inden kl. 19)</div>
+            </div>
+        </li>
+        <li class="site-productlist-item site-customerCenterCard position-relative" product>
+            <div class="mr-2">
+                <a class="show" href="/Stationaer-Mini-PC-Barebone/ASUS-Intel-Nuc-13-Pro-Kit-Core-i7-Barebone/3161910" title="ASUS Intel Nuc 13 Pro Kit | Core i7 | Barebone - 90AB3ANK-MR8120"><img alt="Stationær - Mini PC / Barebone - ASUS Intel Nuc 13 Pro Kit | Core i7 | Barebone - 90AB3ANK-MR8120" class="lazy" data-src="/Images/174x116/3161910_f2025997a749.jpg" height="116" width="174" /></a>
+                    <div data-energy data-cpn="S27766962" data-zoom="50" class="hidden pl-2 pt-2">
+                        <img /><br /><button class="btn-link p-0"><span class="site-energy-datasheet">Produktdatablad</span></button>
+                    </div>
+            </div>
+            <div class="site-productTextContainer position-relative">
+    <div class="site-image-badges-scrollContainer">
+       
+
+        <div class="site-image-badge-container-lg clearfix">
+                    <span class="btn site-image-badge-nostyle site-image-badge-default">HOT</span>
+                    <span class="btn site-image-badge-nostyle site-image-badge-default">KUN 1 TILBAGE P&#197; LAGER</span>
+        </div>
+
+        
+    </div>
+
+                <a class="site-product-link" href="/Stationaer-Mini-PC-Barebone/ASUS-Intel-Nuc-13-Pro-Kit-Core-i7-Barebone/3161910">
+                    <h2 product-display-name class="truncate-overflow">ASUS Intel Nuc 13 Pro Kit | Core i7 | Barebone</h2>
+                    Intel Core i7-1360P, 0GB RAM (op til 64GB), 0TB SSD, (Sata 6Gb/s / PCIe 4.0 x4 (NVMe) - 2230, 2242, 2280 understøttet), Slim Chassis, 2.5GbE, Wifi 6E (802.11a/b/g/n/ac/ax), BT 5.3
+                </a>
+            </div>
+            <div class="priceContainer">
+                <div class="mt-2 price-container mb-2">
+
+
+                                <span class="site-currency-lg  has-presales-price">4.799,00 kr.</span>
+                            <span class="hidden-xs">(3.839,20 kr.)</span>
+                </div>
+                <div class="d-flex justify-content-around">
+                        <form action="/Basket/AddItem" method="post" novalidate="novalidate" data-type="async-minibasket">
+                            <input name="productId" type="hidden" value="3161910" />
+                            <input name="token" type="hidden" value="f56e0c15c0c1" />
+                                <button class="btn site-btn-tall site-btn-green w-100" type="submit" data-gtm-item-id="3161910">
+                                    <i class="ki ki-s pi-cart-fill"></i>&nbsp;<span class="">Køb</span>
+                                </button>
+                            <small class="mt-1 d-block hidden-xs text-center">3161910</small>
+                        </form>
+                </div>
+            </div>
+            <div class="d-flex site-stock site-stock-sm mt-2">
+                <div class="site-stock-icon site-icon-stock-in"></div>
+                <div class="site-stock-text">P&#229; lager – Levering i morgen (bestil inden kl. 19)</div>
+            </div>
+        </li>
+        <li class="site-productlist-item site-customerCenterCard position-relative" product>
+            <div class="mr-2">
+                <a class="show" href="/Stationaer-Mini-PC-Barebone/ASUS-NUC-12-Pro-Kit-Core-5-0GB-0TB/3252640" title="ASUS NUC 12 Pro Kit - Core 5 - 0GB / 0TB - 90AR00E1-M00080"><img alt="Stationær - Mini PC / Barebone - ASUS NUC 12 Pro Kit - Core 5 - 0GB / 0TB - 90AR00E1-M00080" class="lazy" data-src="/Images/174x116/3252640_5f2fc6f1231b.jpg" height="116" width="174" /></a>
+                    <div data-energy data-cpn="S29294553" data-zoom="50" class="hidden pl-2 pt-2">
+                        <img /><br /><button class="btn-link p-0"><span class="site-energy-datasheet">Produktdatablad</span></button>
+                    </div>
+            </div>
+            <div class="site-productTextContainer position-relative">
+    <div class="site-image-badges-scrollContainer">
+       
+
+        <div class="site-image-badge-container-lg clearfix">
+                    <span class="btn site-image-badge-nostyle site-image-badge-default">HOT</span>
+        </div>
+
+        
+    </div>
+
+                <a class="site-product-link" href="/Stationaer-Mini-PC-Barebone/ASUS-NUC-12-Pro-Kit-Core-5-0GB-0TB/3252640">
+                    <h2 product-display-name class="truncate-overflow">ASUS NUC 12 Pro Kit - Core 5 - 0GB / 0TB</h2>
+                    Barebone, mini PC 1 x Core i5 1240P / op til 4.4 GHz, RAM 0 GB, Intel Iris Xe Graphics, IEEE 802.11ax (Wi-Fi 6E), Bluetooth 5.2, 2.5 Gigabit Ethernet, Gigabit Ethernet, sort
+                </a>
+            </div>
+            <div class="priceContainer">
+                <div class="mt-2 price-container mb-2">
+
+
+                                <span class="site-currency-lg  has-presales-price">3.099,00 kr.</span>
+                            <span class="hidden-xs">(2.479,20 kr.)</span>
+                </div>
+                <div class="d-flex justify-content-around">
+                        <form action="/Basket/AddItem" method="post" novalidate="novalidate" data-type="async-minibasket">
+                            <input name="productId" type="hidden" value="3252640" />
+                            <input name="token" type="hidden" value="7359d75fef21" />
+                                <button class="btn site-btn-tall site-btn-green w-100" type="submit" data-gtm-item-id="3252640">
+                                    <i class="ki ki-s pi-cart-fill"></i>&nbsp;<span class="">Køb</span>
+                                </button>
+                            <small class="mt-1 d-block hidden-xs text-center">3252640</small>
+                        </form>
+                </div>
+            </div>
+            <div class="d-flex site-stock site-stock-sm mt-2">
+                <div class="site-stock-icon site-icon-stock-in"></div>
+                <div class="site-stock-text">P&#229; lager – Levering i morgen (bestil inden kl. 19)</div>
+            </div>
+        </li>
+        <li class="site-productlist-item site-customerCenterCard position-relative" product>
+            <div class="mr-2">
+                <a class="show" href="/Stationaer-Mini-PC-Barebone/ASUS-NUC-13-Rugged-Tall-SFF-Atom-x7-x7425E-0-GB-SSD-0-GB/3287945" title="ASUS NUC 13 Rugged Tall - SFF Atom x7 x7425E - 0 GB - SSD 0 GB - 90AS0022-M00140"><img alt="Stationær - Mini PC / Barebone - ASUS NUC 13 Rugged Tall - SFF Atom x7 x7425E - 0 GB - SSD 0 GB - 90AS0022-M00140" class="lazy" data-src="/Images/174x116/3287945_63e4d40204b9.jpg" height="116" width="174" /></a>
+                    <div data-energy data-cpn="S29364512" data-zoom="50" class="hidden pl-2 pt-2">
+                        <img /><br /><button class="btn-link p-0"><span class="site-energy-datasheet">Produktdatablad</span></button>
+                    </div>
+            </div>
+            <div class="site-productTextContainer position-relative">
+
+                <a class="site-product-link" href="/Stationaer-Mini-PC-Barebone/ASUS-NUC-13-Rugged-Tall-SFF-Atom-x7-x7425E-0-GB-SSD-0-GB/3287945">
+                    <h2 product-display-name class="truncate-overflow">ASUS NUC 13 Rugged Tall - SFF Atom x7 x7425E - 0 GB - SSD 0 GB</h2>
+                    Barebone, SFF 1 x Atom x7 x7425E / op til 3.4 GHz, RAM 0 GB, SSD, eMMC 0 GB, UHD Graphics, IEEE 802.11ax (Wi-Fi 6E), 2.5 Gigabit Ethernet, Gigabit Ethernet, Bluetooth 5.2, sort
+                </a>
+            </div>
+            <div class="priceContainer">
+                <div class="mt-2 price-container mb-2">
+
+
+                                <span class="site-currency-lg  has-presales-price">2.399,00 kr.</span>
+                            <span class="hidden-xs">(1.919,20 kr.)</span>
+                </div>
+                <div class="d-flex justify-content-around">
+                        <form action="/Basket/AddItem" method="post" novalidate="novalidate" data-type="async-minibasket">
+                            <input name="productId" type="hidden" value="3287945" />
+                            <input name="token" type="hidden" value="14a76e17e50d" />
+                                <button class="btn site-btn-tall site-btn-green w-100" type="submit" data-gtm-item-id="3287945">
+                                    <i class="ki ki-s pi-cart-fill"></i>&nbsp;<span class="">Køb</span>
+                                </button>
+                            <small class="mt-1 d-block hidden-xs text-center">3287945</small>
+                        </form>
+                </div>
+            </div>
+            <div class="d-flex site-stock site-stock-sm mt-2">
+                <div class="site-stock-icon site-icon-stock-in"></div>
+                <div class="site-stock-text">P&#229; lager – Levering i morgen (bestil inden kl. 19)</div>
+            </div>
+        </li>
+        <li class="site-productlist-item site-customerCenterCard position-relative" product>
+            <div class="mr-2">
+                <a class="show" href="/Stationaer-Mini-PC-Barebone/ASUS-NUC-14-Pro-Core-Ultra-7-vPro-0GB-0TB/3263679" title="ASUS NUC 14 Pro+ Core Ultra 7 / vPro - 0GB / 0TB - 90AR0072-M00280"><img alt="Stationær - Mini PC / Barebone - ASUS NUC 14 Pro+ Core Ultra 7 / vPro - 0GB / 0TB - 90AR0072-M00280" class="lazy" data-src="/Images/174x116/3263679_5edc450f06ea.jpg" height="116" width="174" /></a>
+                    <div data-energy data-cpn="S29364536" data-zoom="50" class="hidden pl-2 pt-2">
+                        <img /><br /><button class="btn-link p-0"><span class="site-energy-datasheet">Produktdatablad</span></button>
+                    </div>
+            </div>
+            <div class="site-productTextContainer position-relative">
+
+                <a class="site-product-link" href="/Stationaer-Mini-PC-Barebone/ASUS-NUC-14-Pro-Core-Ultra-7-vPro-0GB-0TB/3263679">
+                    <h2 product-display-name class="truncate-overflow">ASUS NUC 14 Pro+ Core Ultra 7 / vPro - 0GB / 0TB</h2>
+                    Barebone, mini PC 1 x Core Ultra 7 165H / op til 5 GHz, vPro, RAM 0 GB, Intel Arc Graphics, IEEE 802.11ax (Wi-Fi 6E), Bluetooth 5.3, sort
+                </a>
+            </div>
+            <div class="priceContainer">
+                <div class="mt-2 price-container mb-2">
+
+
+                                <span class="site-currency-lg  has-presales-price">7.299,00 kr.</span>
+                            <span class="hidden-xs">(5.839,20 kr.)</span>
+                </div>
+                <div class="d-flex justify-content-around">
+                        <form action="/Basket/AddItem" method="post" novalidate="novalidate" data-type="async-minibasket">
+                            <input name="productId" type="hidden" value="3263679" />
+                            <input name="token" type="hidden" value="4a8bbe354af8" />
+                                <button class="btn site-btn-tall site-btn-green w-100" type="submit" data-gtm-item-id="3263679">
+                                    <i class="ki ki-s pi-cart-fill"></i>&nbsp;<span class="">Køb</span>
+                                </button>
+                            <small class="mt-1 d-block hidden-xs text-center">3263679</small>
+                        </form>
+                </div>
+            </div>
+            <div class="d-flex site-stock site-stock-sm mt-2">
+                <div class="site-stock-icon site-icon-stock-in"></div>
+                <div class="site-stock-text">P&#229; lager – Levering i morgen (bestil inden kl. 19)</div>
+            </div>
+        </li>
+        <li class="site-productlist-item site-customerCenterCard position-relative" product>
+            <div class="mr-2">
+                <a class="show" href="/Stationaer-Mini-PC-Barebone/ASUS-NUC-12-Pro-Kit-Core-7-0GB-0TB/3252633" title="ASUS NUC 12 Pro Kit -  Core 7 - 0GB / 0TB - 90AR00D1-M00090"><img alt="Stationær - Mini PC / Barebone - ASUS NUC 12 Pro Kit -  Core 7 - 0GB / 0TB - 90AR00D1-M00090" class="lazy" data-src="/Images/174x116/3252633_072908473148.jpg" height="116" width="174" /></a>
+                    <div data-energy data-cpn="S29294561" data-zoom="50" class="hidden pl-2 pt-2">
+                        <img /><br /><button class="btn-link p-0"><span class="site-energy-datasheet">Produktdatablad</span></button>
+                    </div>
+            </div>
+            <div class="site-productTextContainer position-relative">
+
+                <a class="site-product-link" href="/Stationaer-Mini-PC-Barebone/ASUS-NUC-12-Pro-Kit-Core-7-0GB-0TB/3252633">
+                    <h2 product-display-name class="truncate-overflow">ASUS NUC 12 Pro Kit -  Core 7 - 0GB / 0TB</h2>
+                    Barebone, mini PC 1 x Core i7 1260P / op til 4.7 GHz, RAM 0 GB, Intel Iris Xe Graphics, Gigabit Ethernet, 2.5 Gigabit Ethernet, Bluetooth 5.2, IEEE 802.11ax (Wi-Fi 6E), sort
+                </a>
+            </div>
+            <div class="priceContainer">
+                <div class="mt-2 price-container mb-2">
+
+
+                                <span class="site-currency-lg  has-presales-price">3.799,00 kr.</span>
+                            <span class="hidden-xs">(3.039,20 kr.)</span>
+                </div>
+                <div class="d-flex justify-content-around">
+                        <form action="/Basket/AddItem" method="post" novalidate="novalidate" data-type="async-minibasket">
+                            <input name="productId" type="hidden" value="3252633" />
+                            <input name="token" type="hidden" value="d078c1268861" />
+                                <button class="btn site-btn-tall site-btn-green w-100" type="submit" data-gtm-item-id="3252633">
+                                    <i class="ki ki-s pi-cart-fill"></i>&nbsp;<span class="">Køb</span>
+                                </button>
+                            <small class="mt-1 d-block hidden-xs text-center">3252633</small>
+                        </form>
+                </div>
+            </div>
+            <div class="d-flex site-stock site-stock-sm mt-2">
+                <div class="site-stock-icon site-icon-stock-in"></div>
+                <div class="site-stock-text">P&#229; lager – Levering i morgen (bestil inden kl. 19)</div>
+            </div>
+        </li>
+        <li class="site-productlist-item site-customerCenterCard position-relative" product>
+            <div class="mr-2">
+                <a class="show" href="/Stationaer-Mini-PC-Barebone/ASUS-NUC-14-Pro-Kit-Ultra-7-0GB-0TB/3252655" title="ASUS NUC 14 Pro+ Kit - Ultra 7 - 0GB / 0TB - 90AR0051-M000A0"><img alt="Stationær - Mini PC / Barebone - ASUS NUC 14 Pro+ Kit - Ultra 7 - 0GB / 0TB - 90AR0051-M000A0" class="lazy" data-src="/Images/174x116/3252655_a92cc6e927a5.jpg" height="116" width="174" /></a>
+                    <div data-energy data-cpn="S29364541" data-zoom="50" class="hidden pl-2 pt-2">
+                        <img /><br /><button class="btn-link p-0"><span class="site-energy-datasheet">Produktdatablad</span></button>
+                    </div>
+            </div>
+            <div class="site-productTextContainer position-relative">
+
+                <a class="site-product-link" href="/Stationaer-Mini-PC-Barebone/ASUS-NUC-14-Pro-Kit-Ultra-7-0GB-0TB/3252655">
+                    <h2 product-display-name class="truncate-overflow">ASUS NUC 14 Pro+ Kit - Ultra 7 - 0GB / 0TB</h2>
+                    Barebone, mini PC 1 x Core Ultra 7 155H / op til 4.8 GHz, RAM 0 GB, Intel Arc Graphics, Gigabit Ethernet, 2.5 Gigabit Ethernet, IEEE 802.11ax (Wi-Fi 6E), Bluetooth 5.3, hvid
+                </a>
+            </div>
+            <div class="priceContainer">
+                <div class="mt-2 price-container mb-2">
+
+
+                                <span class="site-currency-lg  has-presales-price">5.699,00 kr.</span>
+                            <span class="hidden-xs">(4.559,20 kr.)</span>
+                </div>
+                <div class="d-flex justify-content-around">
+                        <form action="/Basket/AddItem" method="post" novalidate="novalidate" data-type="async-minibasket">
+                            <input name="productId" type="hidden" value="3252655" />
+                            <input name="token" type="hidden" value="d04bee5fe896" />
+                                <button class="btn site-btn-tall site-btn-green w-100" type="submit" data-gtm-item-id="3252655">
+                                    <i class="ki ki-s pi-cart-fill"></i>&nbsp;<span class="">Køb</span>
+                                </button>
+                            <small class="mt-1 d-block hidden-xs text-center">3252655</small>
+                        </form>
+                </div>
+            </div>
+            <div class="d-flex site-stock site-stock-sm mt-2">
+                <div class="site-stock-icon site-icon-stock-in"></div>
+                <div class="site-stock-text">P&#229; lager – Levering i morgen (bestil inden kl. 19)</div>
+            </div>
+        </li>
+        <li class="site-productlist-item site-customerCenterCard position-relative" product>
+            <div class="mr-2">
+                <a class="show" href="/Stationaer-Mini-PC-Barebone/ASUS-Intel-Nuc-12-Pro-Kit-Core-i3-Barebone/3135618" title="ASUS Intel Nuc 12 Pro Kit | Core i3 | Barebone - 90AB2WSH-MR4120"><img alt="Stationær - Mini PC / Barebone - ASUS Intel Nuc 12 Pro Kit | Core i3 | Barebone - 90AB2WSH-MR4120" class="lazy" data-src="/Images/174x116/3135618_dafb1b0e3b02.jpg" height="116" width="174" /></a>
+                    <div data-energy data-cpn="S27445642" data-zoom="50" class="hidden pl-2 pt-2">
+                        <img /><br /><button class="btn-link p-0"><span class="site-energy-datasheet">Produktdatablad</span></button>
+                    </div>
+            </div>
+            <div class="site-productTextContainer position-relative">
+    <div class="site-image-badges-scrollContainer">
+       
+
+        <div class="site-image-badge-container-lg clearfix">
+                    <span class="btn site-image-badge-nostyle site-image-badge-default">KUN 1 TILBAGE P&#197; LAGER</span>
+        </div>
+
+        
+    </div>
+
+                <a class="site-product-link" href="/Stationaer-Mini-PC-Barebone/ASUS-Intel-Nuc-12-Pro-Kit-Core-i3-Barebone/3135618">
+                    <h2 product-display-name class="truncate-overflow">ASUS Intel Nuc 12 Pro Kit | Core i3 | Barebone</h2>
+                    Intel Core i3-1220P, 0GB RAM (op til 64GB), 0TB SSD, (Sata 6Gb/s / PCIe 4.0 x4 (NVMe) - 2230, 2242, 2280 understøttet), Tall Chassis, 2.5GbE, Wifi 6E (802.11a/b/g/n/ac/ax), BT 5.2
+                </a>
+            </div>
+            <div class="priceContainer">
+                <div class="mt-2 price-container mb-2">
+
+
+                                <span class="site-currency-lg  has-presales-price">2.799,00 kr.</span>
+                            <span class="hidden-xs">(2.239,20 kr.)</span>
+                </div>
+                <div class="d-flex justify-content-around">
+                        <form action="/Basket/AddItem" method="post" novalidate="novalidate" data-type="async-minibasket">
+                            <input name="productId" type="hidden" value="3135618" />
+                            <input name="token" type="hidden" value="69b63ed3f170" />
+                                <button class="btn site-btn-tall site-btn-green w-100" type="submit" data-gtm-item-id="3135618">
+                                    <i class="ki ki-s pi-cart-fill"></i>&nbsp;<span class="">Køb</span>
+                                </button>
+                            <small class="mt-1 d-block hidden-xs text-center">3135618</small>
+                        </form>
+                </div>
+            </div>
+            <div class="d-flex site-stock site-stock-sm mt-2">
+                <div class="site-stock-icon site-icon-stock-in"></div>
+                <div class="site-stock-text">P&#229; lager – Levering i morgen (bestil inden kl. 19)</div>
+            </div>
+        </li>
+        <li class="site-productlist-item site-customerCenterCard position-relative" product>
+            <div class="mr-2">
+                <a class="show" href="/Stationaer-Mini-PC-Barebone/ASUS-NUC-13-Pro-Slim-Kit-RNUC13L5KV700000I/3304904" title="ASUS NUC 13 Pro Slim Kit RNUC13L5KV700000I - 90AR0081-M00030"><img alt="Stationær - Mini PC / Barebone - ASUS NUC 13 Pro Slim Kit RNUC13L5KV700000I - 90AR0081-M00030" class="lazy" data-src="/Images/174x116/3304904_ded4cd6a6e2e.jpg" height="116" width="174" /></a>
+                    <div data-energy data-cpn="S29364515" data-zoom="50" class="hidden pl-2 pt-2">
+                        <img /><br /><button class="btn-link p-0"><span class="site-energy-datasheet">Produktdatablad</span></button>
+                    </div>
+            </div>
+            <div class="site-productTextContainer position-relative">
+
+                <a class="site-product-link" href="/Stationaer-Mini-PC-Barebone/ASUS-NUC-13-Pro-Slim-Kit-RNUC13L5KV700000I/3304904">
+                    <h2 product-display-name class="truncate-overflow">ASUS NUC 13 Pro Slim Kit RNUC13L5KV700000I</h2>
+                    Barebone, mini PC 1 x Core i7 1370PE / op til 4.8 GHz, RAM 0 GB, Intel Iris Xe Graphics, IEEE 802.11ax (Wi-Fi 6E), Gigabit Ethernet, 2.5 Gigabit Ethernet, Bluetooth 5.3, sort
+                </a>
+            </div>
+            <div class="priceContainer">
+                <div class="mt-2 price-container mb-2">
+
+
+                                <span class="site-currency-lg  has-presales-price">6.399,00 kr.</span>
+                            <span class="hidden-xs">(5.119,20 kr.)</span>
+                </div>
+                <div class="d-flex justify-content-around">
+                        <form action="/Basket/AddItem" method="post" novalidate="novalidate" data-type="async-minibasket">
+                            <input name="productId" type="hidden" value="3304904" />
+                            <input name="token" type="hidden" value="73e57cabb7b4" />
+                                <button class="btn site-btn-tall site-btn-green w-100" type="submit" data-gtm-item-id="3304904">
+                                    <i class="ki ki-s pi-cart-fill"></i>&nbsp;<span class="">Køb</span>
+                                </button>
+                            <small class="mt-1 d-block hidden-xs text-center">3304904</small>
+                        </form>
+                </div>
+            </div>
+            <div class="d-flex site-stock site-stock-sm mt-2">
+                <div class="site-stock-icon site-icon-stock-in"></div>
+                <div class="site-stock-text">P&#229; lager – Levering i morgen (bestil inden kl. 19)</div>
+            </div>
+        </li>
+        <li class="site-productlist-item site-customerCenterCard position-relative" product>
+            <div class="mr-2">
+                <a class="show" href="/Stationaer-Mini-PC-Barebone/ASUS-NUC-12-Pro-Kit-Core-7-0GB-0TB/3252641" title="ASUS NUC 12 Pro Kit - Core 7 - 0GB / 0TB - 90AR00E1-M000J0"><img alt="Stationær - Mini PC / Barebone - ASUS NUC 12 Pro Kit - Core 7 - 0GB / 0TB - 90AR00E1-M000J0" class="lazy" data-src="/Images/174x116/3252641_d8fdf797d721.jpg" height="116" width="174" /></a>
+                    <div data-energy data-cpn="S27282109" data-zoom="50" class="hidden pl-2 pt-2">
+                        <img /><br /><button class="btn-link p-0"><span class="site-energy-datasheet">Produktdatablad</span></button>
+                    </div>
+            </div>
+            <div class="site-productTextContainer position-relative">
+
+                <a class="site-product-link" href="/Stationaer-Mini-PC-Barebone/ASUS-NUC-12-Pro-Kit-Core-7-0GB-0TB/3252641">
+                    <h2 product-display-name class="truncate-overflow">ASUS NUC 12 Pro Kit - Core 7 - 0GB / 0TB</h2>
+                    Barebone, mini PC 1 x Core i7 1260P / op til 4.7 GHz, RAM 0 GB, Intel Iris Xe Graphics, IEEE 802.11ax (Wi-Fi 6E), Bluetooth 5.2, 2.5 Gigabit Ethernet, Gigabit Ethernet, sort
+                </a>
+            </div>
+            <div class="priceContainer">
+                <div class="mt-2 price-container mb-2">
+
+
+                                <span class="site-currency-lg  has-presales-price">3.899,00 kr.</span>
+                            <span class="hidden-xs">(3.119,20 kr.)</span>
+                </div>
+                <div class="d-flex justify-content-around">
+                        <form action="/Basket/AddItem" method="post" novalidate="novalidate" data-type="async-minibasket">
+                            <input name="productId" type="hidden" value="3252641" />
+                            <input name="token" type="hidden" value="2c1e9d596625" />
+                                <button class="btn site-btn-tall site-btn-green w-100" type="submit" data-gtm-item-id="3252641">
+                                    <i class="ki ki-s pi-cart-fill"></i>&nbsp;<span class="">Køb</span>
+                                </button>
+                            <small class="mt-1 d-block hidden-xs text-center">3252641</small>
+                        </form>
+                </div>
+            </div>
+            <div class="d-flex site-stock site-stock-sm mt-2">
+                <div class="site-stock-icon site-icon-stock-in"></div>
+                <div class="site-stock-text">P&#229; lager – Levering i morgen (bestil inden kl. 19)</div>
+            </div>
+        </li>
+        <li class="site-productlist-item site-customerCenterCard position-relative" product>
+            <div class="mr-2">
+                <a class="show" href="/Stationaer-Mini-PC-Barebone/ASUS-NUC-13-PRO-Core-5-0GB-0TB/3252647" title="ASUS NUC 13 PRO - Core 5 - 0GB / 0TB - 90AR00C1-M000B0"><img alt="Stationær - Mini PC / Barebone - ASUS NUC 13 PRO - Core 5 - 0GB / 0TB - 90AR00C1-M000B0" class="lazy" data-src="/Images/174x116/3252647_4c56a7b82bd9.jpg" height="116" width="174" /></a>
+                    <div data-energy data-cpn="S29294569" data-zoom="50" class="hidden pl-2 pt-2">
+                        <img /><br /><button class="btn-link p-0"><span class="site-energy-datasheet">Produktdatablad</span></button>
+                    </div>
+            </div>
+            <div class="site-productTextContainer position-relative">
+
+                <a class="site-product-link" href="/Stationaer-Mini-PC-Barebone/ASUS-NUC-13-PRO-Core-5-0GB-0TB/3252647">
+                    <h2 product-display-name class="truncate-overflow">ASUS NUC 13 PRO - Core 5 - 0GB / 0TB</h2>
+                    Barebone, mini PC 1 x Core i5 1340P / op til 4.6 GHz, RAM 0 GB, Intel Iris Xe Graphics, IEEE 802.11ax (Wi-Fi 6E), Gigabit Ethernet, 2.5 Gigabit Ethernet, Bluetooth 5.2, sort
+                </a>
+            </div>
+            <div class="priceContainer">
+                <div class="mt-2 price-container mb-2">
+
+
+                                <span class="site-currency-lg  has-presales-price">3.699,00 kr.</span>
+                            <span class="hidden-xs">(2.959,20 kr.)</span>
+                </div>
+                <div class="d-flex justify-content-around">
+                        <form action="/Basket/AddItem" method="post" novalidate="novalidate" data-type="async-minibasket">
+                            <input name="productId" type="hidden" value="3252647" />
+                            <input name="token" type="hidden" value="7fe228ea51c1" />
+                                <button class="btn site-btn-tall site-btn-green w-100" type="submit" data-gtm-item-id="3252647">
+                                    <i class="ki ki-s pi-cart-fill"></i>&nbsp;<span class="">Køb</span>
+                                </button>
+                            <small class="mt-1 d-block hidden-xs text-center">3252647</small>
+                        </form>
+                </div>
+            </div>
+            <div class="d-flex site-stock site-stock-sm mt-2">
+                <div class="site-stock-icon site-icon-stock-in"></div>
+                <div class="site-stock-text">P&#229; lager – Levering i morgen (bestil inden kl. 19)</div>
+            </div>
+        </li>
+        <li class="site-productlist-item site-customerCenterCard position-relative" product>
+            <div class="mr-2">
+                <a class="show" href="/Stationaer-Mini-PC-Barebone/ASUS-NUC-13-PRO-Core-7-0GB-0TB/3252644" title="ASUS NUC 13 PRO - Core 7 - 0GB / 0TB - 90AR0031-M000E0"><img alt="Stationær - Mini PC / Barebone - ASUS NUC 13 PRO - Core 7 - 0GB / 0TB - 90AR0031-M000E0" class="lazy" data-src="/Images/174x116/3252644_d95084e8e527.jpg" height="116" width="174" /></a>
+                    <div data-energy data-cpn="S29294582" data-zoom="50" class="hidden pl-2 pt-2">
+                        <img /><br /><button class="btn-link p-0"><span class="site-energy-datasheet">Produktdatablad</span></button>
+                    </div>
+            </div>
+            <div class="site-productTextContainer position-relative">
+    <div class="site-image-badges-scrollContainer">
+       
+
+        <div class="site-image-badge-container-lg clearfix">
+                    <span class="btn site-image-badge-nostyle site-image-badge-default">F&#197; P&#197; LAGER</span>
+        </div>
+
+        
+    </div>
+
+                <a class="site-product-link" href="/Stationaer-Mini-PC-Barebone/ASUS-NUC-13-PRO-Core-7-0GB-0TB/3252644">
+                    <h2 product-display-name class="truncate-overflow">ASUS NUC 13 PRO - Core 7 - 0GB / 0TB</h2>
+                    Barebone, mini PC 1 x Core i7 1360P / op til 5 GHz, RAM 0 GB, Intel Iris Xe Graphics, IEEE 802.11ax (Wi-Fi 6E), Gigabit Ethernet, 2.5 Gigabit Ethernet, Bluetooth 5.2, sort
+                </a>
+            </div>
+            <div class="priceContainer">
+                <div class="mt-2 price-container mb-2">
+
+
+                                <span class="site-currency-lg  has-presales-price">4.599,00 kr.</span>
+                            <span class="hidden-xs">(3.679,20 kr.)</span>
+                </div>
+                <div class="d-flex justify-content-around">
+                        <form action="/Basket/AddItem" method="post" novalidate="novalidate" data-type="async-minibasket">
+                            <input name="productId" type="hidden" value="3252644" />
+                            <input name="token" type="hidden" value="ad9843866ba2" />
+                                <button class="btn site-btn-tall site-btn-green w-100" type="submit" data-gtm-item-id="3252644">
+                                    <i class="ki ki-s pi-cart-fill"></i>&nbsp;<span class="">Køb</span>
+                                </button>
+                            <small class="mt-1 d-block hidden-xs text-center">3252644</small>
+                        </form>
+                </div>
+            </div>
+            <div class="d-flex site-stock site-stock-sm mt-2">
+                <div class="site-stock-icon site-icon-stock-in"></div>
+                <div class="site-stock-text">P&#229; lager – Levering i morgen (bestil inden kl. 19)</div>
+            </div>
+        </li>
+        <li class="site-productlist-item site-customerCenterCard position-relative" product>
+            <div class="mr-2">
+                <a class="show" href="/Stationaer-Mini-PC-Barebone/Apple-Mac-mini-M4-16GB-256GB/3313594" title="Apple Mac mini | M4 | 16GB | 256GB - MU9D3DH/A"><img alt="Stationær - Mini PC / Barebone - Apple Mac mini | M4 | 16GB | 256GB - MU9D3DH/A" class="lazy" data-src="/Images/174x116/3313594_83b2cf0e18fd.jpg" height="116" width="174" /></a>
+                    <div data-energy data-cpn="S30038288" data-zoom="50" class="hidden pl-2 pt-2">
+                        <img /><br /><button class="btn-link p-0"><span class="site-energy-datasheet">Produktdatablad</span></button>
+                    </div>
+            </div>
+            <div class="site-productTextContainer position-relative">
+
+                <a class="site-product-link" href="/Stationaer-Mini-PC-Barebone/Apple-Mac-mini-M4-16GB-256GB/3313594">
+                    <h2 product-display-name class="truncate-overflow">Apple Mac mini | M4 | 16GB | 256GB</h2>
+                    <strong>M4</strong>, (10-Core CPU & 10-Core GPU), 16GB RAM, 256GB SSD, Gigabit Ethernet, <strong>Silver</strong>
+                </a>
+            </div>
+            <div class="priceContainer">
+                <div class="mt-2 price-container mb-2">
+
+
+                                <span class="site-currency-lg">5.156,00 kr.</span>
+                            <span class="hidden-xs">(4.124,80 kr.)</span>
+                </div>
+                <div class="d-flex justify-content-around">
+                        <form action="/Basket/AddItem" method="post" novalidate="novalidate" data-type="async-minibasket">
+                            <input name="productId" type="hidden" value="3313594" />
+                            <input name="token" type="hidden" value="9b74d10c430f" />
+                                <button class="btn site-btn-tall site-btn-green w-100" type="submit" data-gtm-item-id="3313594">
+                                    <i class="ki ki-s pi-cart-fill"></i>&nbsp;<span class="">Køb</span>
+                                </button>
+                            <small class="mt-1 d-block hidden-xs text-center">3313594</small>
+                        </form>
+                </div>
+            </div>
+            <div class="d-flex site-stock site-stock-sm mt-2">
+                <div class="site-stock-icon site-icon-stock-in"></div>
+                <div class="site-stock-text">P&#229; lager – Levering i morgen (bestil inden kl. 19)</div>
+            </div>
+        </li>
+        <li class="site-productlist-item site-customerCenterCard position-relative" product>
+            <div class="mr-2">
+                <a class="show" href="/Stationaer-Mini-PC-Barebone/ASUS-NUC-14-Essential-Kit-RNUC14MNK1500002/3349043" title="ASUS NUC 14 Essential Kit RNUC14MNK1500002 - 90AR00M2-M000F0"><img alt="Stationær - Mini PC / Barebone - ASUS NUC 14 Essential Kit RNUC14MNK1500002 - 90AR00M2-M000F0" class="lazy" data-src="/Images/174x116/3349043_15f376d40e09.jpg" height="116" width="174" /></a>
+                    <div data-energy data-cpn="S29989188" data-zoom="50" class="hidden pl-2 pt-2">
+                        <img /><br /><button class="btn-link p-0"><span class="site-energy-datasheet">Produktdatablad</span></button>
+                    </div>
+            </div>
+            <div class="site-productTextContainer position-relative">
+
+                <a class="site-product-link" href="/Stationaer-Mini-PC-Barebone/ASUS-NUC-14-Essential-Kit-RNUC14MNK1500002/3349043">
+                    <h2 product-display-name class="truncate-overflow">ASUS NUC 14 Essential Kit RNUC14MNK1500002</h2>
+                    Barebone, mini PC 1 x N-series N150 / op til 3.6 GHz, RAM 0 GB, UHD Graphics, IEEE 802.11ax (Wi-Fi 6E), Gigabit Ethernet, 2.5 Gigabit Ethernet, Bluetooth 5.3, sort
+                </a>
+            </div>
+            <div class="priceContainer">
+                <div class="mt-2 price-container mb-2">
+
+
+                                <span class="site-currency-lg">1.291,00 kr.</span>
+                            <span class="hidden-xs">(1.032,80 kr.)</span>
+                </div>
+                <div class="d-flex justify-content-around">
+                        <form action="/Basket/AddItem" method="post" novalidate="novalidate" data-type="async-minibasket">
+                            <input name="productId" type="hidden" value="3349043" />
+                            <input name="token" type="hidden" value="4ec7f2a8b4a8" />
+                                <button class="btn site-btn-tall site-btn-green w-100" type="submit" data-gtm-item-id="3349043">
+                                    <i class="ki ki-s pi-cart-fill"></i>&nbsp;<span class="">Køb</span>
+                                </button>
+                            <small class="mt-1 d-block hidden-xs text-center">3349043</small>
+                        </form>
+                </div>
+            </div>
+            <div class="d-flex site-stock site-stock-sm mt-2">
+                <div class="site-stock-icon site-icon-stock-in"></div>
+                <div class="site-stock-text">P&#229; lager – Levering i morgen (bestil inden kl. 19)</div>
+            </div>
+        </li>
+        <li class="site-productlist-item site-customerCenterCard position-relative" product>
+            <div class="mr-2">
+                <a class="show" href="/Stationaer-Mini-PC-Barebone/ASUS-NUC-14-Essential-Kit-RNUC14MNK3500002/3349049" title="ASUS NUC 14 Essential Kit RNUC14MNK3500002 - 90AR00M2-M00090"><img alt="Stationær - Mini PC / Barebone - ASUS NUC 14 Essential Kit RNUC14MNK3500002 - 90AR00M2-M00090" class="lazy" data-src="/Images/174x116/3349049_459520a787ef.jpg" height="116" width="174" /></a>
+                    <div data-energy data-cpn="S29989186" data-zoom="50" class="hidden pl-2 pt-2">
+                        <img /><br /><button class="btn-link p-0"><span class="site-energy-datasheet">Produktdatablad</span></button>
+                    </div>
+            </div>
+            <div class="site-productTextContainer position-relative">
+
+                <a class="site-product-link" href="/Stationaer-Mini-PC-Barebone/ASUS-NUC-14-Essential-Kit-RNUC14MNK3500002/3349049">
+                    <h2 product-display-name class="truncate-overflow">ASUS NUC 14 Essential Kit RNUC14MNK3500002</h2>
+                    Barebone, mini PC 1 x N-series N355 / op til 3.9 GHz, RAM 0 GB, UHD Graphics, IEEE 802.11ax (Wi-Fi 6E), Gigabit Ethernet, 2.5 Gigabit Ethernet, Bluetooth 5.3, sort
+                </a>
+            </div>
+            <div class="priceContainer">
+                <div class="mt-2 price-container mb-2">
+
+
+                                <span class="site-currency-lg">1.898,00 kr.</span>
+                            <span class="hidden-xs">(1.518,40 kr.)</span>
+                </div>
+                <div class="d-flex justify-content-around">
+                        <form action="/Basket/AddItem" method="post" novalidate="novalidate" data-type="async-minibasket">
+                            <input name="productId" type="hidden" value="3349049" />
+                            <input name="token" type="hidden" value="869645396362" />
+                                <button class="btn site-btn-tall site-btn-green w-100" type="submit" data-gtm-item-id="3349049">
+                                    <i class="ki ki-s pi-cart-fill"></i>&nbsp;<span class="">Køb</span>
+                                </button>
+                            <small class="mt-1 d-block hidden-xs text-center">3349049</small>
+                        </form>
+                </div>
+            </div>
+            <div class="d-flex site-stock site-stock-sm mt-2">
+                <div class="site-stock-icon site-icon-stock-in"></div>
+                <div class="site-stock-text">Fjernlager, 3-4 dages levering (Forventes p&#229; eget lager 05-05-2025)</div>
+            </div>
+        </li>
+        <li class="site-productlist-item site-customerCenterCard position-relative" product>
+            <div class="mr-2">
+                <a class="show" href="/Stationaer-Mini-PC-Barebone/Apple-Mac-mini-M4-24GB-512GB/3313595" title="Apple Mac mini | M4 | 24GB | 512GB - MCYT4DH/A"><img alt="Stationær - Mini PC / Barebone - Apple Mac mini | M4 | 24GB | 512GB - MCYT4DH/A" class="lazy" data-src="/Images/174x116/3313595_3cae84216b54.jpg" height="116" width="174" /></a>
+                    <div data-energy data-cpn="S30038289" data-zoom="50" class="hidden pl-2 pt-2">
+                        <img /><br /><button class="btn-link p-0"><span class="site-energy-datasheet">Produktdatablad</span></button>
+                    </div>
+            </div>
+            <div class="site-productTextContainer position-relative">
+
+                <a class="site-product-link" href="/Stationaer-Mini-PC-Barebone/Apple-Mac-mini-M4-24GB-512GB/3313595">
+                    <h2 product-display-name class="truncate-overflow">Apple Mac mini | M4 | 24GB | 512GB</h2>
+                    <strong>M4</strong>, (10-Core CPU & 10-Core GPU), 24GB RAM, 512GB SSD, Gigabit Ethernet, <strong>Silver</strong>
+                </a>
+            </div>
+            <div class="priceContainer">
+                <div class="mt-2 price-container mb-2">
+
+
+                                <span class="site-currency-lg">8.872,00 kr.</span>
+                            <span class="hidden-xs">(7.097,60 kr.)</span>
+                </div>
+                <div class="d-flex justify-content-around">
+                        <form action="/Basket/AddItem" method="post" novalidate="novalidate" data-type="async-minibasket">
+                            <input name="productId" type="hidden" value="3313595" />
+                            <input name="token" type="hidden" value="e703c41efb96" />
+                                <button class="btn site-btn-tall site-btn-green w-100" type="submit" data-gtm-item-id="3313595">
+                                    <i class="ki ki-s pi-cart-fill"></i>&nbsp;<span class="">Køb</span>
+                                </button>
+                            <small class="mt-1 d-block hidden-xs text-center">3313595</small>
+                        </form>
+                </div>
+            </div>
+            <div class="d-flex site-stock site-stock-sm mt-2">
+                <div class="site-stock-icon site-icon-stock-in"></div>
+                <div class="site-stock-text">P&#229; lager – Levering i morgen (bestil inden kl. 19)</div>
+            </div>
+        </li>
+        <li class="site-productlist-item site-customerCenterCard position-relative" product>
+            <div class="mr-2">
+                <a class="show" href="/Stationaer-Mini-PC-Barebone/Apple-Mac-mini-M4-16GB-512GB/3313593" title="Apple Mac mini | M4 | 16GB | 512GB - MU9E3DH/A"><img alt="Stationær - Mini PC / Barebone - Apple Mac mini | M4 | 16GB | 512GB - MU9E3DH/A" class="lazy" data-src="/Images/174x116/3313593_dda05562945b.jpg" height="116" width="174" /></a>
+                    <div data-energy data-cpn="S30038275" data-zoom="50" class="hidden pl-2 pt-2">
+                        <img /><br /><button class="btn-link p-0"><span class="site-energy-datasheet">Produktdatablad</span></button>
+                    </div>
+            </div>
+            <div class="site-productTextContainer position-relative">
+
+                <a class="site-product-link" href="/Stationaer-Mini-PC-Barebone/Apple-Mac-mini-M4-16GB-512GB/3313593">
+                    <h2 product-display-name class="truncate-overflow">Apple Mac mini | M4 | 16GB | 512GB</h2>
+                    <strong>M4</strong>, (10-Core CPU & 10-Core GPU), 16GB RAM, 512GB SSD, Gigabit Ethernet, <strong>Silver</strong>
+                </a>
+            </div>
+            <div class="priceContainer">
+                <div class="mt-2 price-container mb-2">
+
+
+                                <span class="site-currency-lg">6.883,00 kr.</span>
+                            <span class="hidden-xs">(5.506,40 kr.)</span>
+                </div>
+                <div class="d-flex justify-content-around">
+                        <form action="/Basket/AddItem" method="post" novalidate="novalidate" data-type="async-minibasket">
+                            <input name="productId" type="hidden" value="3313593" />
+                            <input name="token" type="hidden" value="f9d3677b90b6" />
+                                <button class="btn site-btn-tall site-btn-green w-100" type="submit" data-gtm-item-id="3313593">
+                                    <i class="ki ki-s pi-cart-fill"></i>&nbsp;<span class="">Køb</span>
+                                </button>
+                            <small class="mt-1 d-block hidden-xs text-center">3313593</small>
+                        </form>
+                </div>
+            </div>
+            <div class="d-flex site-stock site-stock-sm mt-2">
+                <div class="site-stock-icon site-icon-stock-in"></div>
+                <div class="site-stock-text">P&#229; lager – Levering i morgen (bestil inden kl. 19)</div>
+            </div>
+        </li>
+        <li class="site-productlist-item site-customerCenterCard position-relative" product>
+            <div class="mr-2">
+                <a class="show" href="/Stationaer-Mini-PC-Barebone/Apple-Mac-mini-M4-Pro-24GB-512GB/3313592" title="Apple Mac mini | M4 Pro | 24GB | 512GB - MCX44DH/A"><img alt="Stationær - Mini PC / Barebone - Apple Mac mini | M4 Pro | 24GB | 512GB - MCX44DH/A" class="lazy" data-src="/Images/174x116/3313592_da4f8daedadc.jpg" height="116" width="174" /></a>
+                    <div data-energy data-cpn="S30038290" data-zoom="50" class="hidden pl-2 pt-2">
+                        <img /><br /><button class="btn-link p-0"><span class="site-energy-datasheet">Produktdatablad</span></button>
+                    </div>
+            </div>
+            <div class="site-productTextContainer position-relative">
+
+                <a class="site-product-link" href="/Stationaer-Mini-PC-Barebone/Apple-Mac-mini-M4-Pro-24GB-512GB/3313592">
+                    <h2 product-display-name class="truncate-overflow">Apple Mac mini | M4 Pro | 24GB | 512GB</h2>
+                    <strong>M4 Pro</strong>, (12-Core CPU & 16-Core GPU), 24GB RAM, 512GB SSD, Gigabit Ethernet, <strong>Silver</strong>
+                </a>
+            </div>
+            <div class="priceContainer">
+                <div class="mt-2 price-container mb-2">
+
+
+                                <span class="site-currency-lg">12.581,00 kr.</span>
+                            <span class="hidden-xs">(10.064,80 kr.)</span>
+                </div>
+                <div class="d-flex justify-content-around">
+                        <form action="/Basket/AddItem" method="post" novalidate="novalidate" data-type="async-minibasket">
+                            <input name="productId" type="hidden" value="3313592" />
+                            <input name="token" type="hidden" value="385654107349" />
+                                <button class="btn site-btn-tall site-btn-green w-100" type="submit" data-gtm-item-id="3313592">
+                                    <i class="ki ki-s pi-cart-fill"></i>&nbsp;<span class="">Køb</span>
+                                </button>
+                            <small class="mt-1 d-block hidden-xs text-center">3313592</small>
+                        </form>
+                </div>
+            </div>
+            <div class="d-flex site-stock site-stock-sm mt-2">
+                <div class="site-stock-icon site-icon-stock-in"></div>
+                <div class="site-stock-text">P&#229; lager – Levering i morgen (bestil inden kl. 19)</div>
+            </div>
+        </li>
+        <li class="site-productlist-item site-customerCenterCard position-relative" product>
+            <div class="mr-2">
+                <a class="show" href="/Stationaer-Mini-PC-Barebone/Minisforum-MINI-PC-Minis-Forum-UM790-Pro-Ryzen-9-7940HS-32GB-RAM-1TB/3345948" title="Minisforum MINI-PC Minis Forum UM790 Pro Ryzen 9 7940HS 32GB RAM + 1TB - Minis UM790 PRO"><img alt="Stationær - Mini PC / Barebone - Minisforum MINI-PC Minis Forum UM790 Pro Ryzen 9 7940HS 32GB RAM + 1TB - Minis UM790 PRO" class="lazy" data-src="/Images/174x116/3345948_db9379242062.jpg" height="116" width="174" /></a>
+                    <div data-energy data-cpn="" data-zoom="50" class="hidden pl-2 pt-2">
+                        <img /><br /><button class="btn-link p-0"><span class="site-energy-datasheet">Produktdatablad</span></button>
+                    </div>
+            </div>
+            <div class="site-productTextContainer position-relative">
+    <div class="site-image-badges-scrollContainer">
+       
+
+        <div class="site-image-badge-container-lg clearfix">
+                    <span class="btn site-image-badge-nostyle site-image-badge-default">KUN 1 TILBAGE P&#197; LAGER</span>
+        </div>
+
+        
+    </div>
+
+                <a class="site-product-link" href="/Stationaer-Mini-PC-Barebone/Minisforum-MINI-PC-Minis-Forum-UM790-Pro-Ryzen-9-7940HS-32GB-RAM-1TB/3345948">
+                    <h2 product-display-name class="truncate-overflow">Minisforum MINI-PC Minis Forum UM790 Pro Ryzen 9 7940HS 32GB RAM + 1TB</h2>
+                    Minisforum UM790 Pro er en højtydende mini-pc med den kraftfulde AMD Ryzen™ 9 7940HS-processor, 32 GB DDR5 RAM og en hurtig 1TB PCIe 4.0 SSD. Med integreret AMD Radeon™ 780M-grafik og avancerede tilslutningsfunktioner som Wi-Fi 6E og USB4 er denne enhed ideel til krævende opgaver, underholdning og professionelt arbejde, alt sammen i et kompakt og pladsbesparende design.
+                </a>
+            </div>
+            <div class="priceContainer">
+                <div class="mt-2 price-container mb-2">
+
+
+                                <span class="site-currency-lg">5.479,00 kr.</span>
+                            <span class="hidden-xs">(4.383,20 kr.)</span>
+                </div>
+                <div class="d-flex justify-content-around">
+                        <form action="/Basket/AddItem" method="post" novalidate="novalidate" data-type="async-minibasket">
+                            <input name="productId" type="hidden" value="3345948" />
+                            <input name="token" type="hidden" value="a925764357bc" />
+                                <button class="btn site-btn-tall site-btn-green w-100" type="submit" data-gtm-item-id="3345948">
+                                    <i class="ki ki-s pi-cart-fill"></i>&nbsp;<span class="">Køb</span>
+                                </button>
+                            <small class="mt-1 d-block hidden-xs text-center">3345948</small>
+                        </form>
+                </div>
+            </div>
+            <div class="d-flex site-stock site-stock-sm mt-2">
+                <div class="site-stock-icon site-icon-stock-in"></div>
+                <div class="site-stock-text">P&#229; lager – Levering i morgen (bestil inden kl. 19)</div>
+            </div>
+        </li>
+        <li class="site-productlist-item site-customerCenterCard position-relative" product>
+            <div class="mr-2">
+                <a class="show" href="/Stationaer-Mini-PC-Barebone/ASUS-NUC-15-Pro-RNUC15CRSU900002/3356073" title="ASUS NUC 15 Pro+ RNUC15CRSU900002 - 90AR00P3-M00050"><img alt="Stationær - Mini PC / Barebone - ASUS NUC 15 Pro+ RNUC15CRSU900002 - 90AR00P3-M00050" class="lazy" data-src="/Images/174x116/3356073_59d9d773e05d.jpg" height="116" width="174" /></a>
+                    <div data-energy data-cpn="S30378364" data-zoom="50" class="hidden pl-2 pt-2">
+                        <img /><br /><button class="btn-link p-0"><span class="site-energy-datasheet">Produktdatablad</span></button>
+                    </div>
+            </div>
+            <div class="site-productTextContainer position-relative">
+
+                <a class="site-product-link" href="/Stationaer-Mini-PC-Barebone/ASUS-NUC-15-Pro-RNUC15CRSU900002/3356073">
+                    <h2 product-display-name class="truncate-overflow">ASUS NUC 15 Pro+ RNUC15CRSU900002</h2>
+                    Barebone, mini PC 1 x Core Ultra 9 285H / op til 5.4 GHz, RAM 0 GB, Arc 140T, IEEE 802.11ax (Wi-Fi 6), IEEE 802.11be (Wi-Fi 7), Bluetooth 5.4, 2.5 Gigabit Ethernet, Gigabit Ethernet, sølv
+                </a>
+            </div>
+            <div class="priceContainer">
+                <div class="mt-2 price-container mb-2">
+
+
+                                <span class="site-currency-lg">7.699,00 kr.</span>
+                            <span class="hidden-xs">(6.159,20 kr.)</span>
+                </div>
+                <div class="d-flex justify-content-around">
+                        <form action="/Basket/AddItem" method="post" novalidate="novalidate" data-type="async-minibasket">
+                            <input name="productId" type="hidden" value="3356073" />
+                            <input name="token" type="hidden" value="e9e8922d826d" />
+                                <button class="btn site-btn-tall site-btn-green w-100" type="submit" data-gtm-item-id="3356073">
+                                    <i class="ki ki-s pi-cart-fill"></i>&nbsp;<span class="">Køb</span>
+                                </button>
+                            <small class="mt-1 d-block hidden-xs text-center">3356073</small>
+                        </form>
+                </div>
+            </div>
+            <div class="d-flex site-stock site-stock-sm mt-2">
+                <div class="site-stock-icon site-icon-stock-comming"></div>
+                <div class="site-stock-text">Bestilt: forventet p&#229; lager 13-05-2025</div>
+            </div>
+        </li>
+        <li class="site-productlist-item site-customerCenterCard position-relative" product>
+            <div class="mr-2">
+                <a class="show" href="/Stationaer-Mini-PC-Barebone/ASUS-NUC-15-Pro-Tall-Kit-RNUC15CRHU700002/3356071" title="ASUS NUC 15 Pro Tall Kit RNUC15CRHU700002 - 90AR00Q2-M000A0"><img alt="Stationær - Mini PC / Barebone - ASUS NUC 15 Pro Tall Kit RNUC15CRHU700002 - 90AR00Q2-M000A0" class="lazy" data-src="/Images/174x116/3356071_60292f47f6cf.jpg" height="116" width="174" /></a>
+                    <div data-energy data-cpn="S30378359" data-zoom="50" class="hidden pl-2 pt-2">
+                        <img /><br /><button class="btn-link p-0"><span class="site-energy-datasheet">Produktdatablad</span></button>
+                    </div>
+            </div>
+            <div class="site-productTextContainer position-relative">
+
+                <a class="site-product-link" href="/Stationaer-Mini-PC-Barebone/ASUS-NUC-15-Pro-Tall-Kit-RNUC15CRHU700002/3356071">
+                    <h2 product-display-name class="truncate-overflow">ASUS NUC 15 Pro Tall Kit RNUC15CRHU700002</h2>
+                    Barebone, mini PC 1 x Core Ultra 7 255H / op til 5.1 GHz, RAM 0 GB, Arc Graphics 140T, IEEE 802.11ax (Wi-Fi 6), IEEE 802.11be (Wi-Fi 7), Bluetooth 5.4, sort
+                </a>
+            </div>
+            <div class="priceContainer">
+                <div class="mt-2 price-container mb-2">
+
+
+                                <span class="site-currency-lg">5.518,00 kr.</span>
+                            <span class="hidden-xs">(4.414,40 kr.)</span>
+                </div>
+                <div class="d-flex justify-content-around">
+                        <form action="/Basket/AddItem" method="post" novalidate="novalidate" data-type="async-minibasket">
+                            <input name="productId" type="hidden" value="3356071" />
+                            <input name="token" type="hidden" value="1ec3cfbc4eac" />
+                                <button class="btn site-btn-tall site-btn-green w-100" type="submit" data-gtm-item-id="3356071">
+                                    <i class="ki ki-s pi-cart-fill"></i>&nbsp;<span class="">Køb</span>
+                                </button>
+                            <small class="mt-1 d-block hidden-xs text-center">3356071</small>
+                        </form>
+                </div>
+            </div>
+            <div class="d-flex site-stock site-stock-sm mt-2">
+                <div class="site-stock-icon site-icon-stock-comming"></div>
+                <div class="site-stock-text">Bestilt: forventet p&#229; lager 13-05-2025</div>
+            </div>
+        </li>
+    <li class="text-center">
+    <div>
+        <ul class="pagination d-inline-block">
+                                            <li class="active"><a href="/Stationaer-Mini-PC-Barebone" rel="follow" class="position-relative pull-left d-flex justify-content-center align-items-center">1</a></li>
+                        <li><a href="/Stationaer-Mini-PC-Barebone?pn=2" rel="follow" class="position-relative pull-left d-flex justify-content-center align-items-center">2</a></li>
+                        <li><a href="/Stationaer-Mini-PC-Barebone?pn=3" rel="follow" class="position-relative pull-left d-flex justify-content-center align-items-center">3</a></li>
+                        <li><a href="/Stationaer-Mini-PC-Barebone?pn=4" rel="follow" class="position-relative pull-left d-flex justify-content-center align-items-center">4</a></li>
+                        <li><a href="/Stationaer-Mini-PC-Barebone?pn=5" rel="follow" class="position-relative pull-left d-flex justify-content-center align-items-center">5</a></li>
+                            <li><a class="position-relative pull-left d-flex justify-content-center align-items-center noborder">...</a></li>
+                <li><a href="/Stationaer-Mini-PC-Barebone?pn=7" rel="follow" class="position-relative pull-left d-flex justify-content-center align-items-center" target="_self">7</a></li>
+                            <li><a href="/Stationaer-Mini-PC-Barebone?pn=2" rel="follow" class="hidden-xs position-relative pull-left d-flex justify-content-center align-items-center"><span class="position-relative pull-left d-flex justify-content-center align-items-center">&raquo;</span></a></li>
+        </ul>
+    </div>
+</li>
+</ul>
+    </div>
+
+    </main>
+</div>
+    </div>
+    <script type="module">
+    Consent.activateFor('functional', function () {
+            (function (s, o, l, v, e, m, a, t) {
+        t = 'solvemateConfig'; s[e] = s[e] || function (x, y) { (s[t] = s[t] || {})[x] = y; }; a = o.createElement(l); a.async = 1; a.src = v; o.body.appendChild(a);
+    })(window, document, 'script', 'https://widget.solvemate.com/v2/init.js', 'solvemate');
+    solvemate('projectID', '5f994edd45b0d36364c03bba');
+    if (document.getElementById("chatbot") != null) {
+        solvemate('hideBeacon', true);
+        solvemate('inlineContainerId', 'chatbot');
+        solvemate('hideGreeting', true);
+    }
+    });
+</script>
+</div>
+    <footer class="footer position-relative" role="contentinfo">
+<div class="footer__top py-4">
+    <div class="ps-container">
+        <div class="site-footer-newsletterContainer">
+
+<div class="f-white">
+    Få nyheder, tilbud og konkurrencer direkte i din mailboks
+</div>
+<div class="p-2">
+<form action="/CustomerCenter/Newsletter/Subscribe" class="input-newsletter position-relative w-100" method="get"><input name="__RequestVerificationToken" type="hidden" value="VFxhPMldptc9cm1x0KXXryYY_f25mI0MVLW8JrJNtwJerkv6N9SEZE4FRHy-cRV9TChnoo7xY8UYE8iW-3iy9Z2F7VelroZv2FBYHkeudQFn-rDjwjalazP_MZ_QpQqWGR4utlBgoCKFhPpDEOqELw2" />        <input name="Email" class="input__round-lg w-100 pr-5" type="email" placeholder="skriv e-mail adresse">
+<input id="source" name="source" type="hidden" value="WebsiteForm" />        <button type="submit" aria-label="Newsletter Subscribe" class="input__round-btn position-absolute d-flex justify-content-center align-items-center">
+            <i class="pi-sm pi pi-send-mail rotate45"></i>
+        </button>
+</form></div>
+                <div class="socialLinksContainer">
+                    <span class="f-white pb-1">Find os på:</span>
+                    <div class="socialLinks">
+                            <a class="px-half" rel="noreferrer" href="https://www.facebook.com/proshop.dk/" target="_blank" title="Find os på: Facebook"><img class="lazy soci-icon" width="40" height="40" data-src="/Content/images/SVG/facebook.svg" src="" alt="Facebook" /></a>
+                            <a class="px-half" rel="noreferrer" href="https://www.instagram.com/proshop.dk/" target="_blank" title="Find os på: Instagram"><img class="lazy soci-icon" width="40" height="40" data-src="/Content/images/SVG/instagram.svg" src="" alt="Instagram" /></a>
+                            <a class="px-half" rel="noreferrer" href="https://www.tiktok.com/@proshop.dk" target="_blank" title="Find os på: TikTok"><img class="lazy soci-icon" width="40" height="40" data-src="/Content/images/SVG/tiktok.svg" src="" alt="TikTok" /></a>
+                            <a class="px-half" rel="noreferrer" href="https://www.youtube.com/c/ProshopDk" target="_blank" title="Find os på: Youtube"><img class="lazy soci-icon" width="40" height="40" data-src="/Content/images/SVG/youtube-logotype.svg" src="" alt="Youtube" /></a>
+                            <a class="px-half" rel="noreferrer" href="https://www.linkedin.com/company/proshop-aps/" target="_blank" title="Find os på: LinkedIn"><img class="lazy soci-icon" width="40" height="40" data-src="/Content/images/SVG/linkedin.svg" src="" alt="LinkedIn" /></a>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
+<div class="pl-2 pr-2 ps-container">
+    <div class="ps-container__inner ps__template--footer">
+        <div class="footer__contact footer__accordion-item active">
+                <div class="display-5 footer__header d-flex"><span class="align-items-center"><i class="pi-sm pi pi-headphones-b mr-1"></i>&#197;bningstider telefon</span><button class="d-flex footer__toggle" data-toggle="true" aria-expanded="true" aria-controls="accordion__section-0"><div class="align-items-center text-left d-flex"><i class="pi-sm pi pi-headphones-b mr-1"></i>&#197;bningstider telefon</div> <i class="ki pi-xs pi-chevron-down"></i></button></div>
+                <div id="accordion__section-0" class="footer__accordion-list">
+                    <table width="100%">
+<tbody>
+<tr>
+<td>Mandag - Torsdag:</td>
+<td>08:00 - 16:00</td>
+</tr>
+<tr>
+<td>Fredag:</td>
+<td>08:00 - 15:30</td>
+</tr>
+<tr>
+<td>Weekend &amp; helligdage:</td>
+<td>Lukket</td>
+</tr>
+<tr>
+<td colspan="2">  </td>
+</tr>
+<tr>
+<td colspan="2">Find svar på ofte stillede spørgsmål i vores <span style="text-decoration: underline;"><strong><a href="/Kundeservice.htm">kundecenter</a></strong></span>, eller kontakt os på <a href="mailto:support@proshop.dk">support@proshop.dk</a>, henvendelser besvares inden for 48 timer.</td>
+</tr>
+</tbody>
+</table>
+                        <div class="pt-2"><p class="display-5 d-flex fw700 footer__display m-0">&#197;bningstider for afhentning af varer</p>Se åbningstider og adresser for Pick-up Points i København og Aarhus, <span style="text-decoration: underline;"><strong><a href="/Om-Pick-up-Points.htm">klik her</a></strong></span>.</div>
+                </div>
+        </div>
+        <div class="footer__support footer__accordion-item">
+            <div class="display-5 footer__header d-flex">
+                <span>Support</span>
+                <button class="d-flex footer__toggle" data-toggle="true" aria-expanded="false" aria-controls="accordion__section-1">
+                    Support
+                    <i class="ki-s pi-chev-right svg-fill-red"></i>
+                </button>
+            </div>
+            <div id="accordion__section-1" class="footer__accordion-list">
+                <ul class="list-unstyled arrow__list">
+                        <li class="d-flex align-items-center">
+                            <i class="ki-s pi-chev-right bg-black"></i>
+                            <a href="/Guides.htm"> Guides</a>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <i class="ki-s pi-chev-right bg-black"></i>
+                            <a href="/Forsendelse-og-levering.htm"> Forsendelse og levering</a>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <i class="ki-s pi-chev-right bg-black"></i>
+                            <a href="/Om-Pick-up-Points.htm"> Om Pick-up Points</a>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <i class="ki-s pi-chev-right bg-black"></i>
+                            <a href="/Reparation-Defekt.htm"> Reparation / Defekt</a>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <i class="ki-s pi-chev-right bg-black"></i>
+                            <a href="/Kundeservice.htm"> Kundeservice</a>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <i class="ki-s pi-chev-right bg-black"></i>
+                            <a href="/Handelsbetingelser.htm"> Handelsbetingelser</a>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <i class="ki-s pi-chev-right bg-black"></i>
+                            <a href="/Persondatapolitik.htm"> Persondatapolitik</a>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <i class="ki-s pi-chev-right bg-black"></i>
+                            <a href="/CSR.htm"> CSR</a>
+                        </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__myProshop footer__accordion-item">
+            <div class="display-5 footer__header d-flex">
+                <span>Min side</span>
+                <button class="d-flex footer__toggle" data-toggle="true" aria-expanded="false" aria-controls="accordion__section-2">
+                    Min side
+                    <i class="ki-s pi-chev-right svg-fill-red"></i>
+                </button>
+            </div>
+            <div id="accordion__section-2" class="footer__accordion-list">
+                <ul class="list-unstyled arrow__list">
+                        <li class="d-flex align-items-center">
+                            <i class="ki-s pi-chev-right bg-black"></i>
+                            <a href="/CustomerCenter"> Mit Proshop</a>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <i class="ki-s pi-chev-right bg-black"></i>
+                            <a href="/CustomerCenter/Rma/Login"> Reklamation</a>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <i class="ki-s pi-chev-right bg-black"></i>
+                            <a href="/CustomerCenter/CustomerReturn/StartReturnCase"> Returnering</a>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <i class="ki-s pi-chev-right bg-black"></i>
+                            <a href="/CustomerCenter/Account"> K&#248;bshistorik</a>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <i class="ki-s pi-chev-right bg-black"></i>
+                            <a href="/CustomerCenter/CustomerAccount/ForgotPassword"> Glemt adgangskode</a>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <i class="ki-s pi-chev-right bg-black"></i>
+                            <a href="/Guide-til-fragtskader.htm"> Guide til fragtskader</a>
+                        </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__address">
+                <div class="footer__accordion-item">
+                    <div class="display-5 footer__header d-flex">
+                        <span>Kontakt</span>
+                        <button class="d-flex footer__toggle" data-toggle="true" aria-expanded="false" aria-controls="accordion__section-3">
+                            Kontakt
+                            <i class="ki-s pi-chev-right svg-fill-red"></i>
+                        </button>
+                    </div>
+                    <div id="accordion__section-3" class="footer__accordion-list">
+                        Proshop a/s<br />Slet Møllevej 17<br />8270 Højbjerg<br />Danmark<br />DK18966239<br /><a href="mailto:support@proshop.dk">support@proshop.dk</a><br /><br />
+
+                        <ul class="list-unstyled arrow__list">
+                                <li class="d-flex align-items-center">
+                                    <i class="ki-s pi-chev-right bg-black"></i>
+                                    <a href="/Om-Proshop.htm"> Om Proshop</a>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <i class="ki-s pi-chev-right bg-black"></i>
+                                    <a href="/Erhverv"> Erhverv</a>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <i class="ki-s pi-chev-right bg-black"></i>
+                                    <a href="/Job.htm"> Job</a>
+                                </li>
+                        </ul>
+                        <div class="pt-2 clearfix">
+                            
+       <div class="menu-button-links pull-left btn-group position-relative">
+        <a id="dropdown-lang" href="#" aria-controls="languageMenu" class="familyRelationsDropdownBtn dropdown btn site-btn-between site-btn-white site-btn-hasborder dropdown-toggle langDropDownBtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="ki-m pi pi-globe mr-1"></i>
+            <p>Lande</p>
+            <i class="ki-s pi-chev-right bg-black rotate90 ml-1"></i>
+        </a>
+        <ul id="languageMenu" role="menu" aria-labelledby="dropdown-lang" class="dropdown__list dropdown-menu familyRelationsDropdown langDropDown">
+                <li role="none">
+                    <a href="//www.proshop.nl">
+                        proshop.nl
+                    </a>
+                </li>
+                <li role="none">
+                    <a href="//www.proshop.no">
+                        proshop.no
+                    </a>
+                </li>
+                <li role="none">
+                    <a href="//www.proshop.pl">
+                        proshop.pl
+                    </a>
+                </li>
+                <li role="none">
+                    <a href="//www.proshop.se">
+                        proshop.se
+                    </a>
+                </li>
+                <li role="none">
+                    <a href="//www.proshop.fi">
+                        proshop.fi
+                    </a>
+                </li>
+                <li role="none">
+                    <a href="//www.proshop.at">
+                        proshop.at
+                    </a>
+                </li>
+                <li role="none">
+                    <a href="//www.proshop.de">
+                        proshop.de
+                    </a>
+                </li>
+        </ul>
+    </div>
+
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
+    <div class="pl-2 pr-2 ps-container"><div class="d-flex footer-row__flex pb-4 pt-2 footer__border justify-content-center">     <div class="site-campaignElement" data-campaign-element-id="299d6d40-a5aa-42b0-914e-f084bc90add2">
+        <a rel="noopener" data-action="campaignClick" data-id="3c871804-857c-4555-a051-a659fd8e74e4" data-name="Proshop.dk defaults" data-creative="299d6d40-a5aa-42b0-914e-f084bc90add2" data-position="footer-certification" href="//certifikat.emaerket.dk/eshop/proshop.dk" target="_blank" border="0" id="emaerke"><img class="lazy" data-src="/Content/images/SVG/e-maerket.svg" alt="e-maerket" width="62" height="66" style="width:62px;height:66px" /></a><script src="" defer data-consent-src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=L6MTra" data-category-consent="cookie_cat_marketing"></script><script>window._learnq=window._learnq||[];window._learnq.push(["track","Visited webpage",{url:window.location.href,name:document.title}])</script><style>.footer__border{flex-direction:initial}</style><a rel="noopener" data-action="campaignClick" data-id="3c871804-857c-4555-a051-a659fd8e74e4" data-name="Proshop.dk defaults" data-creative="299d6d40-a5aa-42b0-914e-f084bc90add2" data-position="footer-certification" href="https://www.findsmiley.dk/989192" target="_blank" alt="Fødevarestyrelsen smiley"><img class="lazy ml-2" style="height:59px;width:50px" data-src="/Images/smiley_105x125.gif" alt="Fødevarestyrelsen smiley" width="50" height="60" /></a>
+    </div>
+ </div></div>
+<div class="footer__bottom">
+    <div class="pl-2 pr-2 ps-container">
+        <div class="d-flex footer-row__flex pt-4 pb-2 justify-content-between align-items-center">
+            <div class="text-center flex-center">
+                        <div class="d-flex mb-2 mx-1">
+                            <img class="lazy" data-src="/content/images/delivery/Postnord.svg" alt="Postnord" />
+                        </div>
+            </div>
+            <div class="text-center flex-center flex-wrap">
+                        <div class="d-flex footer__payment mb-2">
+                            <img class="lazy" data-src="/content/images/cards-svg/Dankort.svg" alt="Dankort" />
+                        </div>
+                        <div class="d-flex footer__payment mb-2">
+                            <img class="lazy" data-src="/content/images/cards-svg/apple-pay.svg" alt="Apple Pay" />
+                        </div>
+                        <div class="d-flex footer__payment mb-2">
+                            <img class="lazy" data-src="/content/images/cards-svg/google-pay.svg" alt="Google Pay" />
+                        </div>
+                        <div class="d-flex footer__payment mb-2">
+                            <img class="lazy" data-src="/content/images/cards-svg/MobilePay.svg" alt="MobilePay" />
+                        </div>
+                        <div class="d-flex footer__payment mb-2">
+                            <img class="lazy" data-src="/content/images/cards-svg/Visa.svg" alt="Visa" />
+                        </div>
+                        <div class="d-flex footer__payment mb-2">
+                            <img class="lazy" data-src="/content/images/cards-svg/MasterCard.svg" alt="Mastercard" />
+                        </div>
+                        <div class="d-flex footer__payment mb-2">
+                            <img class="lazy" data-src="/content/images/cards-svg/PayPal.svg" alt="PayPal" />
+                        </div>
+                        <div class="d-flex footer__payment mb-2">
+                            <img class="lazy" data-src="/content/images/cards-svg/Klarna.svg" alt="Klarna" />
+                        </div>
+            </div>
+        </div>
+    </div>
+    <div id="auctionsMenu" class="d-flex pl-2 pr-2 ps-container"></div> 
+</div>
+<script type="text/javascript">
+    let footerToggle = document.querySelectorAll("[data-toggle='true']");
+    for (var i = 0; i < footerToggle.length; i++) {
+        footerToggle[i].addEventListener('click', function (e) {
+            e.currentTarget.closest('.footer__accordion-item').classList.toggle('active');
+            this.toggleAttribute('aria-expanded="true"');
+        });
+    }
+</script><input id="cookieTextFirstPart" type="hidden" value="Hos Proshop a/s bruger vi cookies til at forbedre brugeroplevelsen samt til personalisering af indhold og annoncer. Denne information deles med tredjepart, eksempelvis Google og Facebook, og cookies anvendes til anonym sporing p&#229; tv&#230;rs af hjemmesider."/>
+<input id="cookieTextLastPart" type="hidden" value="Ved at bruge vores hjemmeside, godkender du vores cookie- og persondatapolitik." />
+<input id="cookieLinkText" type="hidden" value="Du kan l&#230;se mere her" />
+<input id="cookieLink" type="hidden" value="https://www.proshop.dk/Persondatapolitik.htm" />
+<input id="cookieAcceptButtonText" type="hidden" value="OK" /></footer>
+    
+<div class="modal--custom modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModal" aria-hidden="true" data-url="/CustomerCenter/CustomerAccount/TopLogin">
+    <div class="modal-dialog position-relative" role="document">
+        <div class="modal-body position-relative"><button type="button" class="login-modal--close d-flex align-items-center justify-content-end position-absolute" data-dismiss="modal" aria-label="Close"><i aria-hidden="true" class="pi pi-close"></i></button><div id="modalData"><div class="site-spinner mt-1 text-center"></div></div></div>
+    </div>
+</div>
+    <div id="fixedBottomMessage"></div>
+    
+    
+    
+<link rel="preload" href="/dist/Proshop/under.be90d338.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/dist/under.be90d338.css"></noscript>
+
+
+    <script type="text/javascript" language="javascript">
+        var rsa;var raptorLoaded = function (raptor) { rsa = raptor; raptor.initialize({ customerID: "5875", productIdParamIndex: 2, eventTypeParamIndex: 1, useCookies: Consent.isValid('marketing') });
+            var raptorUserId = '';var userId = $('#minibasket').data('customerid');
+            console.log("Raptor **************: " + userId);if (raptorUserId.length > 0) userId = raptorUserId;else if (userId === '0') userId = ''; raptor.trackEvent("visit", "", "", "", "", "", userId, "", "", "", "", "");
+        };
+    </script>
+
+</body>
+
+ 
+ 
+<script type="text/javascript">
+var Consent = { cookieWarning: false, validCategories: ["functional", "statistic", "marketing"] };window.dataLayer = window.dataLayer || [];function gtag() { dataLayer.push(arguments); }gtag('consent', 'default', {'ad_storage': 'denied','ad_user_data': 'denied','ad_personalization': 'denied','analytics_storage': 'denied','wait_for_update': 2000 });if (navigator.userAgent.includes("CookieInformationScanner")) { initCookieInf(); }else if (document.cookie.indexOf('CookieInformationConsent=') < 0) { window.addEventListener('mousemove', initCookieInf);window.addEventListener('scroll', initCookieInf);window.addEventListener('keydown', initCookieInf);} else { initCookieInf();} function initCookieInf() { window.removeEventListener('mousemove', initCookieInf);window.removeEventListener('scroll', initCookieInf);window.removeEventListener('keydown', initCookieInf);var sc = document.createElement('script');sc.type = 'text/javascript';sc.id = 'CookieConsent';sc.defer = true;sc.src = 'https://policy.app.cookieinformation.com/uc.js';sc.dataset.culture = 'DA';sc.dataset.gcmVersion = '2.0';document.head.appendChild(sc);} Consent.cookieWarning = true;Consent.isValid = function (category) { try { return CookieInformation.getConsentGivenFor('cookie_cat_' + category); } catch { return false; } };Consent.run = function (category, callback) { if (Consent.isValid(category)) { callback(); } };Consent.activateFor = function (category, callback) { if (Consent.isValid(category)) { callback(); } else { window.addEventListener('CookieInformationConsentGiven', function () { Consent.run(category, callback) }); } };
+</script>
+ </html>
