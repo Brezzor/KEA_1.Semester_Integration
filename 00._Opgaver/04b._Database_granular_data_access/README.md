@@ -1,33 +1,47 @@
-# How to Connect to MongoDb
+# How to Connect to SQL Express Server
 
-This is a guide for connecting as a public user, to the Cluster0, ***"sample_mflix"*** database.
+This is a guide for connecting, as a public user to a sql express server, ***"SampleDB"*** database.
 
-## Mongosh/Mongo CLI
+## SQLCMD Utility
 
-First you have to make sure you have the MongoDb Shell Tool, and it has to be ***version 2.0.0*** or ***greater***.
+First you have to make sure you have the sqlcmd utility.
 
-### Check if installed or version
-
-To check if you have the MongoDb CLI installed, or check the version. You can run this command in PowerShell:
+Run this command to check if you have it and the version:
 
 ````powershell
-mongosh --version
-#or
-mongo --version
+sqlcmd --version
 ````
 
-### Download link
+### Install/Download
 
-The latest version can be found here.
+#### Winget
 
-&rarr; [https://www.mongodb.com/docs/mongocli/current/](https://downloads.mongodb.com/compass/mongosh-2.4.2-x64.msi) &larr;
+Run the following command to install sqlcmd:
 
-## How to connect using the CLI
+````powershell
+winget install sqlcmd
+````
+
+#### Chocolatey
+
+Run the following command to install sqlcmd:
+
+````powershell
+choco install sqlcmd
+````
+
+#### Microsoft learn
+
+The latest version can also be found here.
+
+&rarr; [sqlcmd utility](https://learn.microsoft.com/en-us/sql/tools/sqlcmd/sqlcmd-utility?view=sql-server-ver16&tabs=go%2Cwindows%2Cwindows-support&pivots=cs1-powershell) &larr;
+
+## How to connect using sqlcmd
 
 Open a PowerShell terminal and write this command:
 
 ````powershell
-mongosh "mongodb+srv://cluster0.ozy9zc3.mongodb.net/" --apiVersion 1 --username public
+sqlcmd -S localhost,1433 -U public_user
 ````
 
 When it ask's for the password.
@@ -36,14 +50,14 @@ When it ask's for the password.
 Enter password: 
 ````
 
-Write ***"public"*** as the password, and it should connect.
+Write ***"PublicUser123!"*** as the password, and it should connect.
 
 ## Relocate to the database
 
 When you first connect. You will be met with this:
 
 ````
-Atlas atlas-ne2a2s-shard-0 [primary] test>
+1>
 ````
 
 "test" is the default starting point when connecting to the Cluster. So you have to run this command, to redirect to the database with content:
