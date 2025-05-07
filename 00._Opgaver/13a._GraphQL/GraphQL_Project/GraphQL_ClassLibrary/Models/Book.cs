@@ -4,12 +4,14 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using HotChocolate.Types.Relay;
 using Microsoft.EntityFrameworkCore;
 
 namespace GraphQL_ClassLibrary.Models;
 
 public partial class Book
 {
+    [ID]
     [Key]
     public Guid Id { get; set; }
 
@@ -18,6 +20,7 @@ public partial class Book
 
     public int? ReleaseYear { get; set; }
 
+    [ID]
     public Guid AuthorId { get; set; }
 
     [ForeignKey("AuthorId")]

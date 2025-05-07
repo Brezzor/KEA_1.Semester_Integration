@@ -4,12 +4,14 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using HotChocolate.Types.Relay;
 using Microsoft.EntityFrameworkCore;
 
 namespace GraphQL_ClassLibrary.Models;
 
 public partial class Author
 {
+    [ID]
     [Key]
     public Guid Id { get; set; }
 

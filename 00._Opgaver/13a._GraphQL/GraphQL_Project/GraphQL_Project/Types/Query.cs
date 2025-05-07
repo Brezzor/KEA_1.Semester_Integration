@@ -16,7 +16,7 @@ namespace GraphQL_Project.Types
         
         [UseProjection]
         [GraphQLDescription("Get a book by id")]
-        public static async Task<Book?> GetBook(Guid id, [Service] IBookRepository repository) =>
+        public static async Task<Book?> GetBook([ID] Guid id, [Service] IBookRepository repository) =>
             await repository.GetBookById(id);
 
         [UseProjection]
@@ -28,7 +28,7 @@ namespace GraphQL_Project.Types
 
         [UseProjection]
         [GraphQLDescription("Get an author by id")]
-        public static async Task<Author?> GetAuthor(Guid id, [Service] IAuthorRepository repository) =>
+        public static async Task<Author?> GetAuthor([ID] Guid id, [Service] IAuthorRepository repository) =>
             await repository.GetAuthorById(id);
     }
 
