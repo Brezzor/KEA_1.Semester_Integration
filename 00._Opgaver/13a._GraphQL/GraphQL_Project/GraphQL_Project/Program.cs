@@ -1,4 +1,5 @@
 using GraphQL_API.Context;
+using GraphQL_ClassLibrary.Models;
 using GraphQL_Project.Repositories;
 using GraphQL_Project.Types;
 using Microsoft.EntityFrameworkCore;
@@ -22,6 +23,7 @@ builder.Services.AddCors(options =>
 builder.Services.AddGraphQLServer()
     .RegisterDbContextFactory<SampleDBContext>()
     .AddGraphQL_APITypes()
+    .AddType<ErrorMessage>()
     .AddProjections()
     .AddFiltering()
     .AddSorting()
