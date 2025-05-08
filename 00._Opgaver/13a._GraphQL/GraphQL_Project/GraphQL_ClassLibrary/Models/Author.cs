@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using HotChocolate;
 using HotChocolate.Types.Relay;
 using Microsoft.EntityFrameworkCore;
 
@@ -13,6 +14,7 @@ public partial class Author
 {
     [ID]
     [Key]
+    [GraphQLDescription("Shown as an ID scaler type. But is of type GUID (example: \"cef5cbe5e277481e8870ffb1e8d0c0f7\")")]
     public Guid Id { get; set; }
 
     [StringLength(100)]

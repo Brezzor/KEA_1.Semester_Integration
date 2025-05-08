@@ -16,7 +16,10 @@ namespace GraphQL_Project.Types
         
         [UseProjection]
         [GraphQLDescription("Get a book by id")]
-        public static async Task<Book?> GetBook([ID] Guid id, [Service] IBookRepository repository) =>
+        public static async Task<Book?> GetBook(
+            [GraphQLDescription("Shown as an ID scaler type. But is of type GUID (example: \"cef5cbe5e277481e8870ffb1e8d0c0f7\")")]
+            [ID] Guid id, 
+            [Service] IBookRepository repository) =>
             await repository.GetBookById(id);
 
         [UseProjection]
@@ -28,7 +31,10 @@ namespace GraphQL_Project.Types
 
         [UseProjection]
         [GraphQLDescription("Get an author by id")]
-        public static async Task<Author?> GetAuthor([ID] Guid id, [Service] IAuthorRepository repository) =>
+        public static async Task<Author?> GetAuthor(
+            [GraphQLDescription("Shown as an ID scaler type. But is of type GUID (example: \"cef5cbe5e277481e8870ffb1e8d0c0f7\")")]
+            [ID] Guid id, 
+            [Service] IAuthorRepository repository) =>
             await repository.GetAuthorById(id);
     }
 
