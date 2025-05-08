@@ -58,11 +58,24 @@ GO
 CREATE LOGIN public_user WITH PASSWORD = 'PublicUser123!';
 CREATE USER public_user FOR LOGIN public_user;
 
--- Column-level permissions: Grant only selected columns
-GRANT SELECT (Id, Name) ON Employees TO public_user;
-GRANT SELECT (Name, Category) ON Products TO public_user;
-
--- Row-level permission on Orders (already applied via the security policy)
-GRANT SELECT ON Orders TO public_user;
-GRANT SELECT ON Customers TO public_user;
+-- Revoke all permissions from the public role
+REVOKE SELECT, INSERT, DELETE, UPDATE, ALTER ON Employees TO public_user;
+REVOKE SELECT, INSERT, DELETE, UPDATE, ALTER ON Products TO public_user;
+REVOKE SELECT, INSERT, DELETE, UPDATE, ALTER ON Orders TO public_user;
+REVOKE SELECT, INSERT, DELETE, UPDATE, ALTER ON Customers TO public_user;
 GO
+
+-- Grant SELECT permission for Name, Cost and Category on the Products table
+GRANT SELECT ON Products TO public_user;
+
+-- Grant SELECT permission for Id, ProductId and Quantity on the Orders table
+GRANT SELECT (Id, ProductId, Quantity) ON Orders TO public_user;
+
+-- Grant SELECT permission for Id and Name on the Customers table
+GRANT SELECT (Id, Name) ON Customers TO public_user;
+
+-- Grant INSERT, UPDATE and DELETE permission on the Orders table
+GRANT INSERT, UPDATE, DELETE ON Orders TO public_user;
+
+-- Grant INSERT, UPDATE and DELETE permission on the Customers table
+GRANT INSERT, UPDATE, DELETE ON Customers TO public_user;

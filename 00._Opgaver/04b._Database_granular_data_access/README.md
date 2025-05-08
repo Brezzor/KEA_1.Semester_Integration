@@ -12,7 +12,7 @@ Run this command to check if you have it and the version:
 sqlcmd --version
 ````
 
-### Install/Download
+### Download/Install
 
 #### Winget
 
@@ -38,90 +38,78 @@ The latest version can also be found here.
 
 ## How to connect using sqlcmd
 
+### TCP Tunnel
+
+Contact me on Facebook Messenger for the tunnel url:
+
+https://www.facebook.com/OliverBresson
+
+Open a PowerShell terminal and write this command:
+
+*Replace the `<url>` with the one I give you.*
+
+````powershell
+sqlcmd -S <url> -d SampleDB -U public_user -P PublicUser123!
+````
+
+### Run Local
+
 Open a PowerShell terminal and write this command:
 
 ````powershell
-sqlcmd -S localhost,1433 -U public_user
+sqlcmd -S localhost,1433 -d SampleDB -U public_user -P PublicUser123!
 ````
 
-When it ask's for the password.
+## SQLCMD Commands
 
-````powershell
-Enter password: 
+To `SELECT` data in one of the Tables. You can run this command:
+
+````sql
+SELECT * FROM Products
+GO
 ````
 
-Write ***"PublicUser123!"*** as the password, and it should connect.
+This `SELECT`'s all the data from the ***Products*** Table. Try to change ***Products*** to one of the other Tables. Like the ***Employees***.
 
-## Relocate to the database
+## public_user permissions
 
-When you first connect. You will be met with this:
+List of permissions. With the names of the Tables, that:
 
-````
-1>
-````
-
-"test" is the default starting point when connecting to the Cluster. So you have to run this command, to redirect to the database with content:
-
-````powershell
-use sample_mflix
-````
-
-When doing this. It changes the selected database, to use ***"sample_mflix"***. Where all the data is stored. 
-
-````
-Atlas atlas-ne2a2s-shard-0 [primary] sample_mflix>
-````
-## MongoDb Shell Commands
-
-To Get/Find data in one of the collections. You can run this command:
-
-````powershell
-db.users.find()
-````
-
-This Gets/Finds all the data from the ***users*** collection. Try to change ***users*** to one of the other collections names. Like the ***comments***.
-
-To Create/Insert data into one of the collections. You can run this command:
-
-````powershell
-db.comments.insert({ name: "Jane Doe", email: "jane.doe@gmail.com", movie_id: "573a1391f29313caabcd8543", text: "Lorem Ipsum", date: new Date()})
-````
-
-This Creates/Inserts data into the ***comments*** collection. Try to change ***comments*** to one of the other collections names. Like the ***users***.
-
-To Alter/Update data in one of the collections. You can run this command:
-
-````powershell
-db.comments.updateOne({ _id: ObjectId("67e3cfcd4b0f8ef8d4c81c1a") },{ $set: { name: "John Doe", email: "john.doe@gmail.com", date: new Date()}})
-````
-
-This Alters/Updates the data in the ***comments*** collection. Try to change ***comments*** to one of the other collections names. Like the ***users***.
-
-
-To Remove/Delete data in one of the collections. You can run this command:
-
-````powershell
-db.comments.deleteOne({ _id: ObjectId("67e3cfcd4b0f8ef8d4c81c1a")})
-````
-
-This Removes/Deletes the data in the ***comments*** collection. Try to change ***comments*** to one of the other collections names. Like the ***users***.
-
-## Public-user permissions
-
-List of permissions. With the names of the collections, that:
-
-- Read/Find:
-    - users
-    - comments
-- Write/insert:
-    - comments
-- Update
-    - comments
-- No access
-    - embedded_movies
-    - movies
-    - sessions
-    - theaters
+- Employees
+    - SELECT :no_entry:
+        - Id :no_entry:
+        - Name :no_entry:
+        - Salary :no_entry:
+        - Department :no_entry:
+    - INSERT :no_entry:
+    - UPDATE :no_entry:
+    - DELETE :no_entry:
+- Products
+    - SELECT :white_check_mark:
+        - Id :white_check_mark:
+        - Name :white_check_mark:
+        - Cost :white_check_mark:
+        - Category :white_check_mark:
+    - INSERT :no_entry:
+    - UPDATE :no_entry:
+    - DELETE :no_entry:
+- Orders
+    - SELECT :white_check_mark:
+        - Id :white_check_mark:
+        - ProductId :white_check_mark:
+        - Quantity :white_check_mark:
+        - Customer :no_entry:
+    - INSERT :white_check_mark:
+    - UPDATE :white_check_mark:
+    - DELETE :white_check_mark:
+- Customers 
+    - SELECT :white_check_mark:
+        - Id :white_check_mark:
+        - Name :white_check_mark:
+        - Email :no_entry:
+    - INSERT :white_check_mark:
+    - UPDATE :white_check_mark:
+    - DELETE :white_check_mark:
 
 # Result of the integration
 
