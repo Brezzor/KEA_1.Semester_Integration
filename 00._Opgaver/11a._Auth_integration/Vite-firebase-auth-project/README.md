@@ -1,14 +1,8 @@
 # Vite-firebase-auth-project
 
-This template should help get you started developing with Vue 3 in Vite.
+Checkout project here:
 
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
+&rarr; [Here](https://kea-1-semester-integration-m5w9.vercel.app/) &larr;
 
 ## Project Setup
 
