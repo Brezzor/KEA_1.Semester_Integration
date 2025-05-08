@@ -37,7 +37,7 @@ export const useAuthStore = defineStore('authStore', () => {
                     .then((result) => {
                         isLoggedIn.value = true
                         errMsg.value = null
-                        user.value = result.currentUser
+                        user.value = auth.currentUser
                         if (user.value.emailVerified) {
                             isLoggedIn.value = true
                         } else {
@@ -71,7 +71,7 @@ export const useAuthStore = defineStore('authStore', () => {
                     .then((result) => {
                         isLoggedIn.value = true
                         errMsg.value = null
-                        user.value = result.currentUser
+                        user.value = auth.currentUser
                         if (user.value.emailVerified) {
                             isLoggedIn.value = true
                         } else {
