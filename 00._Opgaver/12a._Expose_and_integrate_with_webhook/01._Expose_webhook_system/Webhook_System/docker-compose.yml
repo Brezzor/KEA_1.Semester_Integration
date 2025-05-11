@@ -1,0 +1,37 @@
+services:
+  webhook_system:
+    image: ${DOCKER_REGISTRY-}webhooksystem
+    build:
+      context: .
+      dockerfile: Webhook_System/Dockerfile
+    networks:
+      - api-server-net
+
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    environment:
+      SA_PASSWORD: "admin123!"
+      ACCEPT_EULA: "Y"
+    ports:
+      - "1433:1433"
+    volumes:
+      - ./init:/init
+    networks:
+      - api-server-net
+
+  db_init:
+    image: mcr.microsoft.com/mssql-tools
+    depends_on:
+      - sqlserver
+    volumes:
+      - ./init:/init
+    entrypoint: >
+      bash -c "
+        /opt/mssql-tools/bin/sqlcmd -S sqlserver -U SA -P 'admin123!' -i /init/init.sql
+      "
+    networks:
+      - api-server-net
+
+networks:
+  api-server-net:
+    driver: bridge 

@@ -1,0 +1,11 @@
+@Webhook_System_HostAddress = http://localhost:2420
+
+Get {{Webhook_System_HostAddress}}/webhooks
+Accept: application/json
+
+###
+
+POST {{Webhook_System_HostAddress}}/webhooks/ping/
+Accept: application/json
+
+###

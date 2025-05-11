@@ -1,0 +1,28 @@
+-- Create DB
+CREATE DATABASE [WebhooksDB];
+GO
+
+-- Use the DB
+USE [WebhooksDB];
+GO
+
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+-- Create 2 tables
+CREATE TABLE [dbo].[Webhooks](
+	[Id] [uniqueidentifier] NOT NULL,
+	[Url] [nvarchar](300) NULL,
+	[EventType] [nvarchar](100) NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[Webhooks] ADD CONSTRAINT [DF_Webhooks_Id]  DEFAULT (newid()) FOR [Id]
+GO
