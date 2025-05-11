@@ -4,20 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PayPal Donation</title>
-</head>
-<body>
     <script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
-    <div id="paypal-donate-button-container"></div>
-    <script>
-        PayPal.Donation.Button({
-            env:'production',
-            hosted_button_id:'EWBC67WQU8XHA',
-            image: {
-                src:'https://www.paypalobjects.com/da_DK/i/btn/btn_donate_LG.gif',
-                alt:'Doner penge med PayPal-knappen',
-                title:'PayPal - The safer, easier way to pay online!',
-            }
-        }).render('#paypal-donate-button-container');
-    </script>
+</head>
+<body>    
+    <form action="https://www.paypal.com/donate" method="post" target="_top">
+        <input type="hidden" name="hosted_button_id" value="EWBC67WQU8XHA" />
+        <input type="image" src="https://www.paypalobjects.com/da_DK/i/btn/btn_donate_LG.gif" border="0"
+            name="submit" title="PayPal - The safer, easier way to pay online!"
+            alt="Doner penge med PayPal-knappen" />
+        <img alt="" border="0" src="https://www.paypal.com/da_DK/i/scr/pixel.gif" width="1" height="1" />
+    </form>
 </body>
 </html>
