@@ -1,0 +1,33 @@
+services:
+  sql-server-1:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    container_name: sql-express-1
+    environment:
+      SA_PASSWORD: "admin123!"
+      ACCEPT_EULA: "Y"
+    ports:
+      - "1433:1433"
+    volumes:
+      - ./init:/init
+
+  sql-server-2:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    container_name: sql-express-2
+    environment:
+      SA_PASSWORD: "admin123!"
+      ACCEPT_EULA: "Y"
+    ports:
+      - "1434:1433"
+    volumes:
+      - ./init:/init
+
+  db-init:
+    image: mcr.microsoft.com/mssql-tools
+    depends_on:
+      - sql-server-1
+    volumes:
+      - ./init:/init
+    entrypoint: >
+      bash -c "
+        /opt/mssql-tools/bin/sqlcmd -S sql-server-1 -U SA -P 'admin123!' -i /init/init.sql
+      "
