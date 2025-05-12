@@ -11,7 +11,17 @@ builder.Services.AddDbContext<WebhooksDBContext>(options =>
 builder.Services.AddControllers();
 
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
-builder.Services.AddOpenApi();
+builder.Services.AddOpenApi(options =>
+{
+    options.AddSchemaTransformer((schema, context, cancellationToken) =>
+    {
+        if (context.JsonTypeInfo.Type == typeof(EventType))
+        {
+            schema.Type = "string";
+        }
+        return Task.CompletedTask;
+    });
+});
 
 builder.Services.AddEndpointsApiExplorer();
 

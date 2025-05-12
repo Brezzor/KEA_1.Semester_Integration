@@ -12,11 +12,10 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 
--- Create 2 tables
 CREATE TABLE [dbo].[Webhooks](
 	[Id] [uniqueidentifier] NOT NULL,
-	[Url] [nvarchar](300) NULL,
-	[EventType] [nvarchar](100) NULL,
+	[Url] [nvarchar](300) NOT NULL,
+	[EventType] [nvarchar](100) NOT NULL,
 PRIMARY KEY CLUSTERED 
 (
 	[Id] ASC

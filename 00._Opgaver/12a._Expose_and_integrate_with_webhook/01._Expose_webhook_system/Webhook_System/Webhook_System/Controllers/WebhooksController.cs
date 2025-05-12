@@ -17,21 +17,26 @@ namespace Webhook_System.Controllers
         }
 
         [HttpGet]
-        public IActionResult Get()
+        public ActionResult<IEnumerable<Webhook>> Get()
         {
             return Ok(_context.Webhooks);
         }
 
         [HttpPost("register")]
-        public async Task<IActionResult> Register([FromBody] Webhook reg)
+        public async Task<ActionResult<Webhook>> Register([FromBody] WebhookRegisterRequest reg)
         {
-            await _context.Webhooks.AddAsync(reg);
+            Webhook webhook = new Webhook
+            {
+                Url = reg.Url,
+                EventType = reg.EventType.ToString()
+            };
+            await _context.Webhooks.AddAsync(webhook);
             await _context.SaveChangesAsync();
-            return Ok(reg);
+            return Ok(webhook);
         }
 
-        [HttpPost("unregister")]
-        public async Task<IActionResult> Unregister([FromBody] Guid id)
+        [HttpDelete("unregister/{id}")]
+        public async Task<IActionResult> Unregister([FromRoute] Guid id)
         {
             var webhook = await _context.Webhooks.FindAsync(id);
             if (webhook == null)
@@ -40,7 +45,7 @@ namespace Webhook_System.Controllers
             }
             _context.Webhooks.Remove(webhook);
             await _context.SaveChangesAsync();
-            return Ok();
+            return Ok("Successfully unregistered webhook!");
         }
 
         [HttpPost("ping")]
@@ -68,7 +73,66 @@ namespace Webhook_System.Controllers
                     }
                 }
             }
-            return Ok("Ping sent to all registered webhooks.");
+            return Ok("Ping sent to all registered webhooks!");
+        }
+
+        [HttpPost]
+        [Route("ping/{eventType}")]
+        public async Task<IActionResult> PingByEventType([FromRoute] EventType eventType)
+        {
+            string eventTypeString = eventType.ToString();
+            var webhooks = _context.Webhooks.Where(hook => hook.EventType == eventTypeString);
+            foreach (var webhook in webhooks)
+            {
+                var payload = new
+                {
+                    message = "Ping",
+                    timestamp = new DateTimeOffset(DateTime.UtcNow).ToUnixTimeMilliseconds(),
+                    webhook.EventType,
+                    webhook.Url
+                };
+
+                var content = new StringContent(JsonSerializer.Serialize(payload), Encoding.UTF8, "application/json");
+
+                using (var client = new HttpClient())
+                {
+                    var response = await client.PostAsync(webhook.Url, content);
+                    if (!response.IsSuccessStatusCode)
+                    {
+                        return BadRequest(webhook.Url);
+                    }
+                }
+            }
+            return Ok($"Ping sent to all registered webhooks with EventType: '{eventTypeString}'!");
+        }
+
+        [HttpPost]
+        [Route("ping/{id:guid}")]
+        public async Task<IActionResult> PingById([FromRoute] Guid id)
+        {
+            var webhooks = _context.Webhooks.Where(hook => hook.Id == id);
+            foreach (var webhook in webhooks)
+            {
+                var payload = new
+                {
+                    message = "Ping",
+                    timestamp = new DateTimeOffset(DateTime.UtcNow).ToUnixTimeMilliseconds(),
+                    webhook.EventType,
+                    webhook.Url
+                };
+
+                var content = new StringContent(JsonSerializer.Serialize(payload), Encoding.UTF8, "application/json");
+
+                using (var client = new HttpClient())
+                {
+                    var response = await client.PostAsync(webhook.Url, content);
+                    if (!response.IsSuccessStatusCode)
+                    {
+                        return BadRequest(webhook.Url);
+                    }
+                }
+            }
+            return Ok($"Ping sent to webhook with id: '{id}'!");
         }
     }
 }

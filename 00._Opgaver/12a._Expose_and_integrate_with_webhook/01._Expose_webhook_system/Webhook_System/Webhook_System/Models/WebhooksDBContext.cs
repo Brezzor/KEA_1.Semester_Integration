@@ -19,11 +19,9 @@ public partial class WebhooksDBContext : DbContext
     {
         modelBuilder.Entity<Webhook>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__Webhooks__3214EC07DB03315B");
+            entity.HasKey(e => e.Id).HasName("PK__Webhooks__3214EC079895F157");
 
             entity.Property(e => e.Id).HasDefaultValueSql("(newid())");
-            entity.Property(e => e.EventType).HasMaxLength(100);
-            entity.Property(e => e.Url).HasMaxLength(300);
         });
 
         OnModelCreatingPartial(modelBuilder);
