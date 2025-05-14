@@ -9,6 +9,8 @@ services:
       - "1433:1433"
     volumes:
       - ./init:/init
+    networks:
+      - db-network
 
   db_init:
     image: mcr.microsoft.com/mssql-tools
@@ -20,3 +22,9 @@ services:
       bash -c "
         /opt/mssql-tools/bin/sqlcmd -S sqlserver -U SA -P 'admin123!' -i /init/init.sql
       "
+    networks:
+      - db-network
+
+networks:
+  db-network:
+    driver: bridge
