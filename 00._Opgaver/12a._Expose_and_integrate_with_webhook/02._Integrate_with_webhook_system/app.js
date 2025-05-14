@@ -7,7 +7,7 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.post(`${process.env.Webhook_url}/webhook`, (req, res) => {
+app.post(`/webhook`, (req, res) => {
     console.log(req.body);
     res.sendStatus(204);
 });
