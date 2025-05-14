@@ -1,33 +1,22 @@
 services:
-  sql-server-1:
-    image: mcr.microsoft.com/mssql/server:2019-latest
-    container_name: sql-express-1
+  db_source:
+    image: postgres:14
+    container_name: db_source
     environment:
-      SA_PASSWORD: "admin123!"
-      ACCEPT_EULA: "Y"
-    ports:
-      - "1433:1433"
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: sourcedb
     volumes:
-      - ./init:/init
+      - ./init_source_db.sql:/docker-entrypoint-initdb.d/init.sql
+    ports:
+      - "5433:5432"
 
-  sql-server-2:
-    image: mcr.microsoft.com/mssql/server:2019-latest
-    container_name: sql-express-2
+  db_target:
+    image: postgres:14
+    container_name: db_target
     environment:
-      SA_PASSWORD: "admin123!"
-      ACCEPT_EULA: "Y"
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: targetdb
     ports:
-      - "1434:1433"
-    volumes:
-      - ./init:/init
-
-  db-init:
-    image: mcr.microsoft.com/mssql-tools
-    depends_on:
-      - sql-server-1
-    volumes:
-      - ./init:/init
-    entrypoint: >
-      bash -c "
-        /opt/mssql-tools/bin/sqlcmd -S sql-server-1 -U SA -P 'admin123!' -i /init/init.sql
-      "
+      - "5434:5432"
